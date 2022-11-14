@@ -730,13 +730,12 @@ namespace Blockcore.Consensus.ScriptInfo
             SigHash hashType = nHashType & (SigHash)31;
 
             // Check for invalid use of SIGHASH_SINGLE.
-            if (hashType == SigHash.Single)
+            if (hashType == SigHash.Single && nIn >= txTo.Outputs.Count)
             {
-                if (nIn >= txTo.Outputs.Count)
-                {
+               
                     Utils.log("ERROR: SignatureHash() : nOut=" + nIn + " out of range\n");
                     return uint256.One;
-                }
+                
             }
 
             var scriptCopy = new Script(scriptCode._Script);
@@ -933,9 +932,6 @@ namespace Blockcore.Consensus.ScriptInfo
             // TODO: Is the network needed?
             if (!this.IsScriptType(ScriptType.P2SH))
                 return GetSigOpCount(true);
-            // This is a pay-to-script-hash scriptPubKey;
-            // get the last item that the scriptSig
-            // pushes onto the stack:
             bool validSig = new PayToScriptHashTemplate().CheckScriptSig(network, scriptSig, this);
             return !validSig ? 0 : new Script(scriptSig.ToOps().Last().PushData).GetSigOpCount(true);
             // ... and return its opcount:

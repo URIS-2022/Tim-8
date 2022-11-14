@@ -1121,7 +1121,7 @@ namespace Blockcore.Consensus.TransactionInfo
 
     internal class Witness
     {
-        private TxInList _Inputs;
+        private readonly TxInList _Inputs;
 
         public Witness(TxInList inputs)
         {
