@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Blockcore.Features.PoA.IntegrationTests
+build_property.ProjectDir = C:\Users\PC\source\repos\50ti put URIS\src\Tests\Blockcore.Features.PoA.IntegrationTests\

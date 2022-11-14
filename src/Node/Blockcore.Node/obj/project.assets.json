@@ -1,0 +1,979 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Blockcore.Core/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Blockcore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Core.dll": {}
+        }
+      },
+      "Blockcore.Features.Base.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Persistence.LevelDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Base.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Base.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Features.Base.Persistence.RocksDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Persistence.RocksDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Base.Persistence.RocksDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Base.Persistence.RocksDb.dll": {}
+        }
+      },
+      "Blockcore.Features.BlockStore/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.RPC": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.BlockStore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.BlockStore.dll": {}
+        }
+      },
+      "Blockcore.Features.BlockStore.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.BlockStore": "1.1.38",
+          "Blockcore.Persistence.LevelDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.BlockStore.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.BlockStore.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Features.BlockStore.Persistence.RocksDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.BlockStore": "1.1.38",
+          "Blockcore.Persistence.RocksDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.BlockStore.Persistence.RocksDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.BlockStore.Persistence.RocksDb.dll": {}
+        }
+      },
+      "Blockcore.Features.ColdStaking/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Wallet": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.ColdStaking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.ColdStaking.dll": {}
+        }
+      },
+      "Blockcore.Features.Consensus/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.NodeHost": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Consensus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Consensus.dll": {}
+        }
+      },
+      "Blockcore.Features.Consensus.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Persistence.LevelDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Consensus.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Consensus.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Features.Consensus.Persistence.RocksDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Persistence.RocksDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Consensus.Persistence.RocksDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Consensus.Persistence.RocksDb.dll": {}
+        }
+      },
+      "Blockcore.Features.Diagnostic/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.NodeHost": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Diagnostic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Diagnostic.dll": {}
+        }
+      },
+      "Blockcore.Features.Dns/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Dns.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Dns.dll": {}
+        }
+      },
+      "Blockcore.Features.MemoryPool/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.MemoryPool.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.MemoryPool.dll": {}
+        }
+      },
+      "Blockcore.Features.Miner/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.RPC": "1.1.38",
+          "Blockcore.Features.Wallet": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Miner.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Miner.dll": {}
+        }
+      },
+      "Blockcore.Features.NodeHost/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.NodeHost.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.NodeHost.dll": {}
+        }
+      },
+      "Blockcore.Features.Notifications/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.NodeHost": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Notifications.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Notifications.dll": {}
+        }
+      },
+      "Blockcore.Features.Persistence.LevelDb.CorePackage/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Base.Persistence.LevelDb": "1.1.38",
+          "Blockcore.Features.BlockStore.Persistence.LevelDb": "1.1.38",
+          "Blockcore.Features.Consensus.Persistence.LevelDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Persistence.LevelDb.CorePackage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Persistence.LevelDb.CorePackage.dll": {}
+        }
+      },
+      "Blockcore.Features.Persistence.Rocksdb.CorePackage/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Base.Persistence.RocksDb": "1.1.38",
+          "Blockcore.Features.BlockStore.Persistence.RocksDb": "1.1.38",
+          "Blockcore.Features.Consensus.Persistence.RocksDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Persistence.Rocksdb.CorePackage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Persistence.Rocksdb.CorePackage.dll": {}
+        }
+      },
+      "Blockcore.Features.RPC/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.RPC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.RPC.dll": {}
+        }
+      },
+      "Blockcore.Features.Wallet/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.BlockStore": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.RPC": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Wallet.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Wallet.dll": {}
+        }
+      },
+      "Blockcore.Features.WatchOnlyWallet/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Notifications": "1.1.38",
+          "Blockcore.Features.Wallet": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.WatchOnlyWallet.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.WatchOnlyWallet.dll": {}
+        }
+      },
+      "Blockcore.Networks.BCP/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.BCP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.BCP.dll": {}
+        }
+      },
+      "Blockcore.Networks.Bitcoin/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Bitcoin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Bitcoin.dll": {}
+        }
+      },
+      "Blockcore.Networks.City/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.City.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.City.dll": {}
+        }
+      },
+      "Blockcore.Networks.Cybits/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Cybits.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Cybits.dll": {}
+        }
+      },
+      "Blockcore.Networks.HomeCoin/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.Miner": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.HomeCoin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.HomeCoin.dll": {}
+        }
+      },
+      "Blockcore.Networks.Impleum/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Impleum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Impleum.dll": {}
+        }
+      },
+      "Blockcore.Networks.Molie/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Molie.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Molie.dll": {}
+        }
+      },
+      "Blockcore.Networks.OpenExo/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.OpenExo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.OpenExo.dll": {}
+        }
+      },
+      "Blockcore.Networks.RoyalSportsCity/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.NodeHost": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.RoyalSportsCity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.RoyalSportsCity.dll": {}
+        }
+      },
+      "Blockcore.Networks.Rutanio/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Rutanio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Rutanio.dll": {}
+        }
+      },
+      "Blockcore.Networks.SeniorBlockCoin/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.NodeHost": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.SeniorBlockCoin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.SeniorBlockCoin.dll": {}
+        }
+      },
+      "Blockcore.Networks.SERF/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.SERF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.SERF.dll": {}
+        }
+      },
+      "Blockcore.Networks.Stratis/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Stratis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Stratis.dll": {}
+        }
+      },
+      "Blockcore.Networks.Strax/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.Miner": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Strax.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Strax.dll": {}
+        }
+      },
+      "Blockcore.Networks.X1/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.Miner": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.X1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.X1.dll": {}
+        }
+      },
+      "Blockcore.Networks.x42/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.Miner": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.x42.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.x42.dll": {}
+        }
+      },
+      "Blockcore.Networks.Xds/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Xds.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Xds.dll": {}
+        }
+      },
+      "Blockcore.Networks.xRhodium/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.xRhodium.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.xRhodium.dll": {}
+        }
+      },
+      "Blockcore.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Persistence.RocksDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Persistence.RocksDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Persistence.RocksDb.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blockcore.Core/1.1.38": {
+      "type": "project",
+      "path": "../../Blockcore/Blockcore.csproj",
+      "msbuildProject": "../../Blockcore/Blockcore.csproj"
+    },
+    "Blockcore.Features.Base.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Base.Persistence.LevelDb/Blockcore.Features.Base.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Base.Persistence.LevelDb/Blockcore.Features.Base.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Features.Base.Persistence.RocksDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Base.Persistence.RocksDb/Blockcore.Features.Base.Persistence.RocksDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Base.Persistence.RocksDb/Blockcore.Features.Base.Persistence.RocksDb.csproj"
+    },
+    "Blockcore.Features.BlockStore/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.BlockStore/Blockcore.Features.BlockStore.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.BlockStore/Blockcore.Features.BlockStore.csproj"
+    },
+    "Blockcore.Features.BlockStore.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.BlockStore.Persistence.LevelDb/Blockcore.Features.BlockStore.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.BlockStore.Persistence.LevelDb/Blockcore.Features.BlockStore.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Features.BlockStore.Persistence.RocksDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.BlockStore.Persistence.RocksDb/Blockcore.Features.BlockStore.Persistence.RocksDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.BlockStore.Persistence.RocksDb/Blockcore.Features.BlockStore.Persistence.RocksDb.csproj"
+    },
+    "Blockcore.Features.ColdStaking/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.ColdStaking/Blockcore.Features.ColdStaking.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.ColdStaking/Blockcore.Features.ColdStaking.csproj"
+    },
+    "Blockcore.Features.Consensus/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Consensus/Blockcore.Features.Consensus.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Consensus/Blockcore.Features.Consensus.csproj"
+    },
+    "Blockcore.Features.Consensus.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Consensus.Persistence.LevelDb/Blockcore.Features.Consensus.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Consensus.Persistence.LevelDb/Blockcore.Features.Consensus.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Features.Consensus.Persistence.RocksDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Consensus.Persistence.RocksDb/Blockcore.Features.Consensus.Persistence.RocksDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Consensus.Persistence.RocksDb/Blockcore.Features.Consensus.Persistence.RocksDb.csproj"
+    },
+    "Blockcore.Features.Diagnostic/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Diagnostic/Blockcore.Features.Diagnostic.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Diagnostic/Blockcore.Features.Diagnostic.csproj"
+    },
+    "Blockcore.Features.Dns/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Dns/Blockcore.Features.Dns.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Dns/Blockcore.Features.Dns.csproj"
+    },
+    "Blockcore.Features.MemoryPool/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.MemoryPool/Blockcore.Features.MemoryPool.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.MemoryPool/Blockcore.Features.MemoryPool.csproj"
+    },
+    "Blockcore.Features.Miner/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Miner/Blockcore.Features.Miner.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Miner/Blockcore.Features.Miner.csproj"
+    },
+    "Blockcore.Features.NodeHost/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.NodeHost/Blockcore.Features.NodeHost.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.NodeHost/Blockcore.Features.NodeHost.csproj"
+    },
+    "Blockcore.Features.Notifications/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Notifications/Blockcore.Features.Notifications.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Notifications/Blockcore.Features.Notifications.csproj"
+    },
+    "Blockcore.Features.Persistence.LevelDb.CorePackage/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Persistence.LevelDb.CorePackage/Blockcore.Features.Persistence.LevelDb.CorePackage.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Persistence.LevelDb.CorePackage/Blockcore.Features.Persistence.LevelDb.CorePackage.csproj"
+    },
+    "Blockcore.Features.Persistence.Rocksdb.CorePackage/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Persistence.Rocksdb.CorePackage/Blockcore.Features.Persistence.Rocksdb.CorePackage.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Persistence.Rocksdb.CorePackage/Blockcore.Features.Persistence.Rocksdb.CorePackage.csproj"
+    },
+    "Blockcore.Features.RPC/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.RPC/Blockcore.Features.RPC.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.RPC/Blockcore.Features.RPC.csproj"
+    },
+    "Blockcore.Features.Wallet/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Wallet/Blockcore.Features.Wallet.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Wallet/Blockcore.Features.Wallet.csproj"
+    },
+    "Blockcore.Features.WatchOnlyWallet/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.WalletWatchOnly/Blockcore.Features.WalletWatchOnly.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.WalletWatchOnly/Blockcore.Features.WalletWatchOnly.csproj"
+    },
+    "Blockcore.Networks.BCP/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.BCP/Blockcore.Networks.BCP.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.BCP/Blockcore.Networks.BCP.csproj"
+    },
+    "Blockcore.Networks.Bitcoin/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Bitcoin/Blockcore.Networks.Bitcoin.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Bitcoin/Blockcore.Networks.Bitcoin.csproj"
+    },
+    "Blockcore.Networks.City/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.City/Blockcore.Networks.City.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.City/Blockcore.Networks.City.csproj"
+    },
+    "Blockcore.Networks.Cybits/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/BlockCore.Networks.Cybits/Blockcore.Networks.Cybits.csproj",
+      "msbuildProject": "../../Networks/BlockCore.Networks.Cybits/Blockcore.Networks.Cybits.csproj"
+    },
+    "Blockcore.Networks.HomeCoin/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.HomeCoin/Blockcore.Networks.HomeCoin.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.HomeCoin/Blockcore.Networks.HomeCoin.csproj"
+    },
+    "Blockcore.Networks.Impleum/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Impleum/Blockcore.Networks.Impleum.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Impleum/Blockcore.Networks.Impleum.csproj"
+    },
+    "Blockcore.Networks.Molie/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Molie/Blockcore.Networks.Molie.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Molie/Blockcore.Networks.Molie.csproj"
+    },
+    "Blockcore.Networks.OpenExo/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.OpenExo/Blockcore.Networks.OpenExo.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.OpenExo/Blockcore.Networks.OpenExo.csproj"
+    },
+    "Blockcore.Networks.RoyalSportsCity/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.RoyalSportsCity/Blockcore.Networks.RoyalSportsCity.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.RoyalSportsCity/Blockcore.Networks.RoyalSportsCity.csproj"
+    },
+    "Blockcore.Networks.Rutanio/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Rutanio/Blockcore.Networks.Rutanio.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Rutanio/Blockcore.Networks.Rutanio.csproj"
+    },
+    "Blockcore.Networks.SeniorBlockCoin/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.SeniorBlockCoin/Blockcore.Networks.SeniorBlockCoin.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.SeniorBlockCoin/Blockcore.Networks.SeniorBlockCoin.csproj"
+    },
+    "Blockcore.Networks.SERF/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.SERF/Blockcore.Networks.SERF.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.SERF/Blockcore.Networks.SERF.csproj"
+    },
+    "Blockcore.Networks.Stratis/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Stratis/Blockcore.Networks.Stratis.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Stratis/Blockcore.Networks.Stratis.csproj"
+    },
+    "Blockcore.Networks.Strax/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Strax/Blockcore.Networks.Strax.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Strax/Blockcore.Networks.Strax.csproj"
+    },
+    "Blockcore.Networks.X1/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.X1/Blockcore.Networks.X1.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.X1/Blockcore.Networks.X1.csproj"
+    },
+    "Blockcore.Networks.x42/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.x42/Blockcore.Networks.x42.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.x42/Blockcore.Networks.x42.csproj"
+    },
+    "Blockcore.Networks.Xds/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Xds/Blockcore.Networks.Xds.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Xds/Blockcore.Networks.Xds.csproj"
+    },
+    "Blockcore.Networks.xRhodium/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.XRC/Blockcore.Networks.XRC.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.XRC/Blockcore.Networks.XRC.csproj"
+    },
+    "Blockcore.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Persistence.LevelDb/Blockcore.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Persistence.LevelDb/Blockcore.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Persistence.RocksDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Persistence.RocksDb/Blockcore.Persistence.RocksDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Persistence.RocksDb/Blockcore.Persistence.RocksDb.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Blockcore.Features.BlockStore >= 1.1.38",
+      "Blockcore.Features.ColdStaking >= 1.1.38",
+      "Blockcore.Features.Diagnostic >= 1.1.38",
+      "Blockcore.Features.Dns >= 1.1.38",
+      "Blockcore.Features.Miner >= 1.1.38",
+      "Blockcore.Features.NodeHost >= 1.1.38",
+      "Blockcore.Features.Notifications >= 1.1.38",
+      "Blockcore.Features.Persistence.LevelDb.CorePackage >= 1.1.38",
+      "Blockcore.Features.Persistence.Rocksdb.CorePackage >= 1.1.38",
+      "Blockcore.Features.RPC >= 1.1.38",
+      "Blockcore.Features.Wallet >= 1.1.38",
+      "Blockcore.Features.WatchOnlyWallet >= 1.1.38",
+      "Blockcore.Networks.BCP >= 1.1.38",
+      "Blockcore.Networks.Bitcoin >= 1.1.38",
+      "Blockcore.Networks.City >= 1.1.38",
+      "Blockcore.Networks.Cybits >= 1.1.38",
+      "Blockcore.Networks.HomeCoin >= 1.1.38",
+      "Blockcore.Networks.Impleum >= 1.1.38",
+      "Blockcore.Networks.Molie >= 1.1.38",
+      "Blockcore.Networks.OpenExo >= 1.1.38",
+      "Blockcore.Networks.RoyalSportsCity >= 1.1.38",
+      "Blockcore.Networks.Rutanio >= 1.1.38",
+      "Blockcore.Networks.SERF >= 1.1.38",
+      "Blockcore.Networks.SeniorBlockCoin >= 1.1.38",
+      "Blockcore.Networks.Stratis >= 1.1.38",
+      "Blockcore.Networks.Strax >= 1.1.38",
+      "Blockcore.Networks.X1 >= 1.1.38",
+      "Blockcore.Networks.Xds >= 1.1.38",
+      "Blockcore.Networks.x42 >= 1.1.38",
+      "Blockcore.Networks.xRhodium >= 1.1.38"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.1.38",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Node\\Blockcore.Node\\Blockcore.Node.csproj",
+      "projectName": "Blockcore.Node",
+      "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Node\\Blockcore.Node\\Blockcore.Node.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Node\\Blockcore.Node\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\Blockcore.Features.BlockStore.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\Blockcore.Features.BlockStore.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.ColdStaking\\Blockcore.Features.ColdStaking.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.ColdStaking\\Blockcore.Features.ColdStaking.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Diagnostic\\Blockcore.Features.Diagnostic.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Diagnostic\\Blockcore.Features.Diagnostic.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Dns\\Blockcore.Features.Dns.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Dns\\Blockcore.Features.Dns.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\Blockcore.Features.Miner.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\Blockcore.Features.Miner.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Notifications\\Blockcore.Features.Notifications.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Notifications\\Blockcore.Features.Notifications.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.WalletWatchOnly\\Blockcore.Features.WalletWatchOnly.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.WalletWatchOnly\\Blockcore.Features.WalletWatchOnly.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Persistence\\Blockcore.Features.Persistence.LevelDb.CorePackage\\Blockcore.Features.Persistence.LevelDb.CorePackage.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Persistence\\Blockcore.Features.Persistence.LevelDb.CorePackage\\Blockcore.Features.Persistence.LevelDb.CorePackage.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Persistence\\Blockcore.Features.Persistence.Rocksdb.CorePackage\\Blockcore.Features.Persistence.Rocksdb.CorePackage.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Persistence\\Blockcore.Features.Persistence.Rocksdb.CorePackage\\Blockcore.Features.Persistence.Rocksdb.CorePackage.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.BCP\\Blockcore.Networks.BCP.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.BCP\\Blockcore.Networks.BCP.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Bitcoin\\Blockcore.Networks.Bitcoin.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Bitcoin\\Blockcore.Networks.Bitcoin.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.City\\Blockcore.Networks.City.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.City\\Blockcore.Networks.City.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\BlockCore.Networks.Cybits\\Blockcore.Networks.Cybits.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\BlockCore.Networks.Cybits\\Blockcore.Networks.Cybits.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.HomeCoin\\Blockcore.Networks.HomeCoin.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.HomeCoin\\Blockcore.Networks.HomeCoin.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Impleum\\Blockcore.Networks.Impleum.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Impleum\\Blockcore.Networks.Impleum.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Molie\\Blockcore.Networks.Molie.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Molie\\Blockcore.Networks.Molie.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.OpenExo\\Blockcore.Networks.OpenExo.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.OpenExo\\Blockcore.Networks.OpenExo.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.RoyalSportsCity\\Blockcore.Networks.RoyalSportsCity.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.RoyalSportsCity\\Blockcore.Networks.RoyalSportsCity.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Rutanio\\Blockcore.Networks.Rutanio.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Rutanio\\Blockcore.Networks.Rutanio.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.SeniorBlockCoin\\Blockcore.Networks.SeniorBlockCoin.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.SeniorBlockCoin\\Blockcore.Networks.SeniorBlockCoin.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.SERF\\Blockcore.Networks.SERF.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.SERF\\Blockcore.Networks.SERF.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Stratis\\Blockcore.Networks.Stratis.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Stratis\\Blockcore.Networks.Stratis.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Strax\\Blockcore.Networks.Strax.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Strax\\Blockcore.Networks.Strax.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.X1\\Blockcore.Networks.X1.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.X1\\Blockcore.Networks.X1.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.x42\\Blockcore.Networks.x42.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.x42\\Blockcore.Networks.x42.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Xds\\Blockcore.Networks.Xds.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.Xds\\Blockcore.Networks.Xds.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.XRC\\Blockcore.Networks.XRC.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.XRC\\Blockcore.Networks.XRC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

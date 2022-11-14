@@ -1,0 +1,374 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Blockcore.Core/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Blockcore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Core.dll": {}
+        }
+      },
+      "Blockcore.Features.Base.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Persistence.LevelDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Base.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Base.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Features.BlockStore/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.RPC": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.BlockStore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.BlockStore.dll": {}
+        }
+      },
+      "Blockcore.Features.BlockStore.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.BlockStore": "1.1.38",
+          "Blockcore.Persistence.LevelDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.BlockStore.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.BlockStore.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Features.Consensus/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.NodeHost": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Consensus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Consensus.dll": {}
+        }
+      },
+      "Blockcore.Features.Consensus.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Persistence.LevelDb": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Consensus.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Consensus.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Features.MemoryPool/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.MemoryPool.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.MemoryPool.dll": {}
+        }
+      },
+      "Blockcore.Features.NodeHost/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.NodeHost.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.NodeHost.dll": {}
+        }
+      },
+      "Blockcore.Features.RPC/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.RPC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.RPC.dll": {}
+        }
+      },
+      "Blockcore.Features.Wallet/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.BlockStore": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38",
+          "Blockcore.Features.RPC": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Wallet.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Wallet.dll": {}
+        }
+      },
+      "Blockcore.Networks.Bitcoin/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Bitcoin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Bitcoin.dll": {}
+        }
+      },
+      "Blockcore.Networks.Stratis/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.MemoryPool": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Networks.Stratis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Networks.Stratis.dll": {}
+        }
+      },
+      "Blockcore.Persistence.LevelDb/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Persistence.LevelDb.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Persistence.LevelDb.dll": {}
+        }
+      },
+      "Blockcore.Tests.Common/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Base.Persistence.LevelDb": "1.1.38",
+          "Blockcore.Features.BlockStore.Persistence.LevelDb": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38",
+          "Blockcore.Features.Consensus.Persistence.LevelDb": "1.1.38",
+          "Blockcore.Networks.Bitcoin": "1.1.38",
+          "Blockcore.Networks.Stratis": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Tests.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Tests.Common.dll": {}
+        }
+      },
+      "Blockcore.Tests.Wallet.Common/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Features.Wallet": "1.1.38",
+          "Blockcore.Tests.Common": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Tests.Wallet.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Tests.Wallet.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blockcore.Core/1.1.38": {
+      "type": "project",
+      "path": "../../Blockcore/Blockcore.csproj",
+      "msbuildProject": "../../Blockcore/Blockcore.csproj"
+    },
+    "Blockcore.Features.Base.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Base.Persistence.LevelDb/Blockcore.Features.Base.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Base.Persistence.LevelDb/Blockcore.Features.Base.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Features.BlockStore/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.BlockStore/Blockcore.Features.BlockStore.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.BlockStore/Blockcore.Features.BlockStore.csproj"
+    },
+    "Blockcore.Features.BlockStore.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.BlockStore.Persistence.LevelDb/Blockcore.Features.BlockStore.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.BlockStore.Persistence.LevelDb/Blockcore.Features.BlockStore.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Features.Consensus/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Consensus/Blockcore.Features.Consensus.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Consensus/Blockcore.Features.Consensus.csproj"
+    },
+    "Blockcore.Features.Consensus.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Features.Consensus.Persistence.LevelDb/Blockcore.Features.Consensus.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Features.Consensus.Persistence.LevelDb/Blockcore.Features.Consensus.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Features.MemoryPool/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.MemoryPool/Blockcore.Features.MemoryPool.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.MemoryPool/Blockcore.Features.MemoryPool.csproj"
+    },
+    "Blockcore.Features.NodeHost/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.NodeHost/Blockcore.Features.NodeHost.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.NodeHost/Blockcore.Features.NodeHost.csproj"
+    },
+    "Blockcore.Features.RPC/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.RPC/Blockcore.Features.RPC.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.RPC/Blockcore.Features.RPC.csproj"
+    },
+    "Blockcore.Features.Wallet/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Wallet/Blockcore.Features.Wallet.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Wallet/Blockcore.Features.Wallet.csproj"
+    },
+    "Blockcore.Networks.Bitcoin/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Bitcoin/Blockcore.Networks.Bitcoin.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Bitcoin/Blockcore.Networks.Bitcoin.csproj"
+    },
+    "Blockcore.Networks.Stratis/1.1.38": {
+      "type": "project",
+      "path": "../../Networks/Blockcore.Networks.Stratis/Blockcore.Networks.Stratis.csproj",
+      "msbuildProject": "../../Networks/Blockcore.Networks.Stratis/Blockcore.Networks.Stratis.csproj"
+    },
+    "Blockcore.Persistence.LevelDb/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Persistence/Blockcore.Persistence.LevelDb/Blockcore.Persistence.LevelDb.csproj",
+      "msbuildProject": "../../Features/Persistence/Blockcore.Persistence.LevelDb/Blockcore.Persistence.LevelDb.csproj"
+    },
+    "Blockcore.Tests.Common/1.1.38": {
+      "type": "project",
+      "path": "../Blockcore.Tests.Common/Blockcore.Tests.Common.csproj",
+      "msbuildProject": "../Blockcore.Tests.Common/Blockcore.Tests.Common.csproj"
+    },
+    "Blockcore.Tests.Wallet.Common/1.1.38": {
+      "type": "project",
+      "path": "../Blockcore.Tests.Wallet.Common/Blockcore.Tests.Wallet.Common.csproj",
+      "msbuildProject": "../Blockcore.Tests.Wallet.Common/Blockcore.Tests.Wallet.Common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Blockcore.Core >= 1.1.38",
+      "Blockcore.Features.RPC >= 1.1.38",
+      "Blockcore.Features.Wallet >= 1.1.38",
+      "Blockcore.Tests.Common >= 1.1.38",
+      "Blockcore.Tests.Wallet.Common >= 1.1.38"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.1.38",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Tests\\Blockcore.Features.Wallet.Tests\\Blockcore.Features.Wallet.Tests.csproj",
+      "projectName": "Blockcore.Features.Wallet.Tests",
+      "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Tests\\Blockcore.Features.Wallet.Tests\\Blockcore.Features.Wallet.Tests.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Tests\\Blockcore.Features.Wallet.Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Tests\\Blockcore.Tests.Common\\Blockcore.Tests.Common.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Tests\\Blockcore.Tests.Common\\Blockcore.Tests.Common.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Tests\\Blockcore.Tests.Wallet.Common\\Blockcore.Tests.Wallet.Common.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Tests\\Blockcore.Tests.Wallet.Common\\Blockcore.Tests.Wallet.Common.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

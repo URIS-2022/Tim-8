@@ -1,0 +1,517 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.X1\\Blockcore.Networks.X1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj",
+        "projectName": "Blockcore.Core",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\Blockcore.Features.BlockStore.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\Blockcore.Features.BlockStore.csproj",
+        "projectName": "Blockcore.Features.BlockStore",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\Blockcore.Features.BlockStore.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj",
+        "projectName": "Blockcore.Features.Consensus",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj",
+        "projectName": "Blockcore.Features.MemoryPool",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\Blockcore.Features.Miner.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\Blockcore.Features.Miner.csproj",
+        "projectName": "Blockcore.Features.Miner",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\Blockcore.Features.Miner.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj",
+        "projectName": "Blockcore.Features.NodeHost",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj",
+        "projectName": "Blockcore.Features.RPC",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj",
+        "projectName": "Blockcore.Features.Wallet",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\Blockcore.Features.Wallet.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Wallet\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\Blockcore.Features.BlockStore.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.BlockStore\\Blockcore.Features.BlockStore.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.RPC\\Blockcore.Features.RPC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.X1\\Blockcore.Networks.X1.csproj": {
+      "version": "1.1.38",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.X1\\Blockcore.Networks.X1.csproj",
+        "projectName": "Blockcore.Networks.X1",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.X1\\Blockcore.Networks.X1.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.X1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj"
+              },
+              "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\Blockcore.Features.Miner.csproj": {
+                "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Miner\\Blockcore.Features.Miner.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

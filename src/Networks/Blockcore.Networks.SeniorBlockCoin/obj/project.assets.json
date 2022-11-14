@@ -1,0 +1,153 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Blockcore.Core/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Blockcore.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Core.dll": {}
+        }
+      },
+      "Blockcore.Features.Consensus/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.NodeHost": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.Consensus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.Consensus.dll": {}
+        }
+      },
+      "Blockcore.Features.MemoryPool/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38",
+          "Blockcore.Features.Consensus": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.MemoryPool.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.MemoryPool.dll": {}
+        }
+      },
+      "Blockcore.Features.NodeHost/1.1.38": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Blockcore.Core": "1.1.38"
+        },
+        "compile": {
+          "bin/placeholder/Blockcore.Features.NodeHost.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Blockcore.Features.NodeHost.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blockcore.Core/1.1.38": {
+      "type": "project",
+      "path": "../../Blockcore/Blockcore.csproj",
+      "msbuildProject": "../../Blockcore/Blockcore.csproj"
+    },
+    "Blockcore.Features.Consensus/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.Consensus/Blockcore.Features.Consensus.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.Consensus/Blockcore.Features.Consensus.csproj"
+    },
+    "Blockcore.Features.MemoryPool/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.MemoryPool/Blockcore.Features.MemoryPool.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.MemoryPool/Blockcore.Features.MemoryPool.csproj"
+    },
+    "Blockcore.Features.NodeHost/1.1.38": {
+      "type": "project",
+      "path": "../../Features/Blockcore.Features.NodeHost/Blockcore.Features.NodeHost.csproj",
+      "msbuildProject": "../../Features/Blockcore.Features.NodeHost/Blockcore.Features.NodeHost.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Blockcore.Core >= 1.1.38",
+      "Blockcore.Features.Consensus >= 1.1.38",
+      "Blockcore.Features.MemoryPool >= 1.1.38",
+      "Blockcore.Features.NodeHost >= 1.1.38"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.1.38",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.SeniorBlockCoin\\Blockcore.Networks.SeniorBlockCoin.csproj",
+      "projectName": "Blockcore.Networks.SeniorBlockCoin",
+      "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.SeniorBlockCoin\\Blockcore.Networks.SeniorBlockCoin.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Networks\\Blockcore.Networks.SeniorBlockCoin\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Blockcore\\Blockcore.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.Consensus\\Blockcore.Features.Consensus.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.MemoryPool\\Blockcore.Features.MemoryPool.csproj"
+            },
+            "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj": {
+              "projectPath": "C:\\Users\\PC\\source\\repos\\50ti put URIS\\src\\Features\\Blockcore.Features.NodeHost\\Blockcore.Features.NodeHost.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
