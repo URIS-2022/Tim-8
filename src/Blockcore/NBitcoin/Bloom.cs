@@ -205,7 +205,7 @@ namespace NBitcoin
                     if (j >= (maxSize - 1))
                         return b;
 
-                    c[j++] = (byte)zeros;
+                    c[j++] = zeros;
                     c[j++] = b[i];
                     zeros = 0;
                 }

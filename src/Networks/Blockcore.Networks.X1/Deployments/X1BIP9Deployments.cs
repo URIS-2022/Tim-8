@@ -4,7 +4,7 @@ using Blockcore.Consensus.TransactionInfo;
 
 namespace Blockcore.Networks.X1.Deployments
 {
-    public class X1BIP9Deployments : BIP9DeploymentsArray
+    public class X1BIP9Deployments : Bip9DeploymentsArray
     {
         // The position of each deployment in the deployments array.
         public const int TestDummy = 0;

@@ -46,7 +46,7 @@ namespace Blockcore.Base.Deployments
     /// <summary>
     /// Used for recording deployment parameters and returning deployment flags.
     /// </summary>
-    public abstract class BIP9DeploymentsArray : IBIP9DeploymentsArray
+    public abstract class Bip9DeploymentsArray : IBIP9DeploymentsArray
     {
         protected readonly BIP9DeploymentsParameters[] parameters;
 
@@ -54,7 +54,7 @@ namespace Blockcore.Base.Deployments
         /// Constructs a deployments array of the given length.
         /// </summary>
         /// <param name="length">The length of the deployments array to construct.</param>
-        public BIP9DeploymentsArray(int length)
+        public Bip9DeploymentsArray(int length)
         {
             this.parameters = new BIP9DeploymentsParameters[length];
         }
@@ -76,7 +76,7 @@ namespace Blockcore.Base.Deployments
     /// <summary>
     /// Used by networks that don't define any deployments or deployment parameters.
     /// </summary>
-    public class NoBIP9Deployments : BIP9DeploymentsArray
+    public class NoBIP9Deployments : Bip9DeploymentsArray
     {
         /// <summary>
         /// Constructs a zero-length deployments array.

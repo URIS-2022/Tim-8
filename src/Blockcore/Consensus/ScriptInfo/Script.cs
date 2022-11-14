@@ -398,6 +398,11 @@ namespace Blockcore.Consensus.ScriptInfo
         {
         }
 
+        public Script(byte[] data)
+             : this((IEnumerable<byte>)data)
+        {
+        }
+
         public Script(params Op[] ops)
             : this((IEnumerable<Op>)ops)
         {
@@ -445,11 +450,6 @@ namespace Blockcore.Consensus.ScriptInfo
         public static Script FromHex(string hex)
         {
             return FromBytesUnsafe(Encoders.Hex.DecodeData(hex));
-        }
-
-        public Script(byte[] data)
-            : this((IEnumerable<byte>)data)
-        {
         }
 
         private Script(byte[] data, bool @unsafe, bool unused)

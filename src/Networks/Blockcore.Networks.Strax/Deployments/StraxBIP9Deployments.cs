@@ -7,7 +7,7 @@ namespace Blockcore.Networks.Strax.Deployments
     /// <summary>
     /// BIP9 deployments for the Strax network.
     /// </summary>
-    public class StraxBIP9Deployments : BIP9DeploymentsArray
+    public class StraxBIP9Deployments : Bip9DeploymentsArray
     {
         // The position of each deployment in the deployments array. Note that this is decoupled from the actual position of the flag bit for the deployment in the block version.
         public const int CSV = 0;

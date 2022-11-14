@@ -7,7 +7,7 @@ namespace Blockcore.Networks.City.Networks.Deployments
     /// <summary>
     /// BIP9 deployments for the City Chain network.
     /// </summary>
-    public class CityBIP9Deployments : BIP9DeploymentsArray
+    public class CityBIP9Deployments : Bip9DeploymentsArray
     {
         // The position of each deployment in the deployments array. Note that this is decoupled from the actual position of the flag bit for the deployment in the block version.
         public const int ColdStaking = 0;

@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace Blockcore.Controllers
 {
     [AttributeUsage(AttributeTargets.Method)]
-    public class ActionDescription : Attribute
+    public class ActionDescriptionAttribute : Attribute
     {
         public string Description { get; private set; }
 
-        public ActionDescription(string description)
+        public ActionDescriptionAttribute (string description)
         {
             this.Description = description;
         }

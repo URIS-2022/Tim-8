@@ -4,7 +4,7 @@ using Blockcore.Consensus.TransactionInfo;
 
 namespace Blockcore.Networks.Xds.Deployments
 {
-    public class XdsBIP9Deployments : BIP9DeploymentsArray
+    public class XdsBIP9Deployments : Bip9DeploymentsArray
     {
         // The position of each deployment in the deployments array.
         public const int TestDummy = 0;

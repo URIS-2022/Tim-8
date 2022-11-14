@@ -7,7 +7,7 @@ namespace HomeCoin.Networks.Deployments
     /// <summary>
     /// BIP9 deployments for the Blockcore sample coin network.
     /// </summary>
-    public class HomeCoinBIP9Deployments : BIP9DeploymentsArray
+    public class HomeCoinBIP9Deployments : Bip9DeploymentsArray
     {
         // The position of each deployment in the deployments array. Note that this is decoupled from the actual position of the flag bit for the deployment in the block version.
         public const int CSV = 0;
