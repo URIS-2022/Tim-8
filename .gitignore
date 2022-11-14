@@ -272,3 +272,4 @@ src/.idea/.idea.Stratis.Bitcoin.FullNode/.idea/
 src.backup
 src/Libs/Bitcoin Core/0.13.1/OSX/
 src/Libs/Bitcoin Core/0.13.1/Windows/
+/src/Libs/Bitcoin Core/0.15.1/Windows/bitcoind.exe
