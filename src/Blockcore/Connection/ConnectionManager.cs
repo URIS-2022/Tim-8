@@ -336,7 +336,7 @@ namespace Blockcore.Connection
             if (oneTryBuilder.Length > 0)
             {
                 builder.AppendLine(">>> OneTry:");
-                builder.Append(oneTryBuilder.ToString());
+                builder.Append(oneTryBuilder);
                 builder.AppendLine("<<<");
             }
 

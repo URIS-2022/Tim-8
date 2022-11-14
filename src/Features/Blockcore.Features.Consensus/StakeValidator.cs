@@ -318,8 +318,8 @@ namespace Blockcore.Features.Consensus
             BigInteger weight = BigInteger.ValueOf(valueIn);
             BigInteger weightedTarget = target.Multiply(weight);
 
-            context.TargetProofOfStake = this.ToUInt256(weightedTarget);
-            this.logger.LogDebug("POS target is '{0}', weighted target for {1} coins is '{2}'.", this.ToUInt256(target), valueIn, context.TargetProofOfStake);
+            context.TargetProofOfStake = ToUInt256(weightedTarget);
+            this.logger.LogDebug("POS target is '{0}', weighted target for {1} coins is '{2}'.", ToUInt256(target), valueIn, context.TargetProofOfStake);
 
             // Calculate hash.
             using (var ms = new MemoryStream())
@@ -406,7 +406,7 @@ namespace Blockcore.Features.Consensus
         /// </summary>
         /// <param name="input"><see cref="BigInteger"/> input value.</param>
         /// <returns><see cref="uint256"/> version of <paramref name="input"/>.</returns>
-        private uint256 ToUInt256(BigInteger input)
+        private static uint256 ToUInt256(BigInteger input)
         {
             byte[] array = input.ToByteArray();
 

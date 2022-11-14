@@ -226,7 +226,7 @@ namespace Blockcore.Base
                         {
                             // If we reached the maximum number of samples, we need to remove oldest sample.
                             sources.Remove(oldSample.Source);
-                            this.logger.LogDebug("Oldest sample {0} from peer '{1}' removed.", oldSample.TimeOffset, oldSample.Source);
+                            this.logger.LogDebug("Oldest sample {oldSample.TimeOffset} from peer '{oldSample.Source}' removed.", oldSample.TimeOffset, oldSample.Source);
                         }
 
                         this.RecalculateTimeOffsetLocked();
@@ -277,7 +277,7 @@ namespace Blockcore.Base
         {
             if (this.outboundTimestampOffsets.Count >= MinOutboundSampleCount)
             {
-                this.logger.LogDebug("We have {0} outbound samples and {1} inbound samples.", this.outboundTimestampOffsets.Count, this.inboundSampleSources.Count);
+                this.logger.LogDebug("We have {this.outboundTimestampOffsets.Count} outbound samples and {this.inboundSampleSources.Count} inbound samples.", this.outboundTimestampOffsets.Count, this.inboundSampleSources.Count);
                 List<double> inboundOffsets = this.inboundTimestampOffsets.Select(s => s.TimeOffset.TotalSeconds).ToList();
                 List<double> outboundOffsets = this.outboundTimestampOffsets.Select(s => s.TimeOffset.TotalSeconds).ToList();
 
