@@ -16,7 +16,7 @@ namespace Blockcore.Tests.Base
     public class ChainStateTest
     {
         /// <summary>Source of randomness.</summary>
-        private static readonly Random rng = new();
+        private static readonly Random rng = new Random();
 
         /// <summary>
         /// Tests <see cref="ChainState.MarkBlockInvalid(uint256, DateTime?)"/> and <see cref="ChainState.IsMarkedInvalid(uint256)"/>
@@ -83,7 +83,7 @@ namespace Blockcore.Tests.Base
             foreach (uint256 hash in allHashes)
             {
                 uint num = hash.GetLow32();
-                bool isSecondGroup = num is >= 0x10 and < 0x20;
+                bool isSecondGroup = (0x10 <= num) && (num < 0x20);
                 Assert.Equal(!isSecondGroup, store.IsInvalid(hash));
             }
         }

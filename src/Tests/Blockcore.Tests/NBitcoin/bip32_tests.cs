@@ -26,7 +26,7 @@ namespace NBitcoin.Tests
         private class TestVector
         {
             public string strHexMaster;
-            public List<TestDerivation> vDerive = new();
+            public List<TestDerivation> vDerive = new List<TestDerivation>();
 
             public TestVector(string strHexMasterIn)
             {

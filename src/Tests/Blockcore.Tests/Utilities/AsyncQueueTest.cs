@@ -13,7 +13,7 @@ namespace Blockcore.Tests.Utilities
     public class AsyncQueueTest
     {
         /// <summary>Source of randomness.</summary>
-        private readonly Random random = new();
+        private readonly Random random = new Random();
 
         /// <summary>
         /// Tests that <see cref="AsyncQueue{T}.Dispose"/> triggers cancellation inside the on-enqueue callback.

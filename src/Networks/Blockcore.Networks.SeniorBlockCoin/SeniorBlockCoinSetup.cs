@@ -8,9 +8,9 @@ namespace Blockcore.Networks.SeniorBlockCoin
 {
     internal class SeniorBlockCoinSetup
     {
-        internal static SeniorBlockCoinSetup Instance = new();
+        internal static SeniorBlockCoinSetup Instance = new SeniorBlockCoinSetup();
 
-        internal CoinSetup Setup = new()
+        internal CoinSetup Setup = new CoinSetup
         {
             FileNamePrefix = "seniorblockcoin",
             ConfigFileName = "seniorblockcoin.conf",
@@ -27,7 +27,7 @@ namespace Blockcore.Networks.SeniorBlockCoin
             PoSVersion = 4
         };
 
-        internal NetworkSetup Main = new()
+        internal NetworkSetup Main = new NetworkSetup
         {
             Name = "SeniorBlockCoinMain",
             RootFolderName = "seniorblockcoin",
@@ -53,7 +53,7 @@ namespace Blockcore.Networks.SeniorBlockCoin
             }
         };
 
-        internal NetworkSetup RegTest = new()
+        internal NetworkSetup RegTest = new NetworkSetup
         {
             Name = "SeniorBlockCoinRegTest",
             RootFolderName = "seniorblockcoinregtest",
@@ -79,7 +79,7 @@ namespace Blockcore.Networks.SeniorBlockCoin
             }
         };
 
-        internal NetworkSetup Test = new()
+        internal NetworkSetup Test = new NetworkSetup
         {
             Name = "SeniorBlockCoinTest",
             RootFolderName = "seniorblockcointest",

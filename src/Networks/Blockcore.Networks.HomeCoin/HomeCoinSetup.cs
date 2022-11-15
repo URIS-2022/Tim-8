@@ -8,9 +8,9 @@ namespace HomeCoin
 {
     internal class HomeCoinSetup
     {
-        internal static HomeCoinSetup Instance = new();
+        internal static HomeCoinSetup Instance = new HomeCoinSetup();
 
-        internal CoinSetup Setup = new()
+        internal CoinSetup Setup = new CoinSetup
         {
             FileNamePrefix = "homecoin",
             ConfigFileName = "homecoin.conf",
@@ -27,7 +27,7 @@ namespace HomeCoin
             PoSVersion = 3
         };
 
-        internal NetworkSetup Main = new()
+        internal NetworkSetup Main = new NetworkSetup
         {
             Name = "HomeCoinMain",
             RootFolderName = "homecoin",
@@ -58,7 +58,7 @@ namespace HomeCoin
             }
         };
 
-        internal NetworkSetup RegTest = new()
+        internal NetworkSetup RegTest = new NetworkSetup
         {
             Name = "HomeCoinRegTest",
             RootFolderName = "homecoinregtest",
@@ -85,7 +85,7 @@ namespace HomeCoin
             }
         };
 
-        internal NetworkSetup Test = new()
+        internal NetworkSetup Test = new NetworkSetup
         {
             Name = "HomeCoinTest",
             RootFolderName = "homecointest",

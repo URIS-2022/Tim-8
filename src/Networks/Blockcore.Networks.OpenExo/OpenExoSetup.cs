@@ -8,9 +8,9 @@ namespace OpenExo
 {
     internal class OpenExoSetup
     {
-        internal static OpenExoSetup Instance = new();
+        internal static OpenExoSetup Instance = new OpenExoSetup();
 
-        internal CoinSetup Setup = new()
+        internal CoinSetup Setup = new CoinSetup
         {
             FileNamePrefix = "exos",
             ConfigFileName = "exos.conf",
@@ -26,7 +26,7 @@ namespace OpenExo
             PoSVersion = 3
         };
 
-        internal NetworkSetup Main = new()
+        internal NetworkSetup Main = new NetworkSetup
         {
             Name = "EXOSMain",
             RootFolderName = "exos",
@@ -90,7 +90,7 @@ namespace OpenExo
             }
         };
 
-        internal NetworkSetup RegTest = new()
+        internal NetworkSetup RegTest = new NetworkSetup
         {
             Name = "EXOSRegTest",
             RootFolderName = "exosregtest",
@@ -118,7 +118,7 @@ namespace OpenExo
         };
 
         //TODO: Update Rutanio parameters
-        internal NetworkSetup Test = new()
+        internal NetworkSetup Test = new NetworkSetup
         {
             Name = "EXOSTest",
             RootFolderName = "exostest",

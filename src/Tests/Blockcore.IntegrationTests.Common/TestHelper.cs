@@ -342,7 +342,7 @@ namespace Blockcore.IntegrationTests.Common
         {
             public uint256 Hash = null;
             public Transaction Transaction = null;
-            public List<TransactionNode> DependsOn = new();
+            public List<TransactionNode> DependsOn = new List<TransactionNode>();
 
             public TransactionNode(Transaction tx)
             {
@@ -488,7 +488,7 @@ namespace Blockcore.IntegrationTests.Common
 
         private static bool IsBitcoinCoreConnectedTo(CoreNode thisNode, CoreNode isConnectedToNode)
         {
-            if (thisNode.runner is not BitcoinCoreRunner)
+            if (!(thisNode.runner is BitcoinCoreRunner))
                 throw new ArgumentException($"{0} is not a bitcoin core node.");
 
             var thisNodePeers = thisNode.CreateRPCClient().GetPeersInfo();

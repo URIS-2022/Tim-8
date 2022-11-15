@@ -905,7 +905,7 @@ namespace Blockcore.Features.Miner.Staking
                             string scriptType = this.ValidStakingTemplates.Single(t => t.Value.CheckScriptPubKey(utxoStakeInfo.TxOut.ScriptPubKey)).Key;
 
                             // Default behavior.
-                            if (scriptType is "P2PK" or "P2PKH")
+                            if ((scriptType == "P2PK") || (scriptType == "P2PKH"))
                             {
                                 scriptPubKeyOut = PayToPubkeyTemplate.Instance.GenerateScriptPubKey(context.CoinstakeContext.Key.PubKey);
                             }

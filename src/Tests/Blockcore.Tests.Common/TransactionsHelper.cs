@@ -13,7 +13,7 @@ namespace Blockcore.Tests.Common
 {
     public class TransactionsHelper
     {
-        private static readonly Random random = new();
+        private static readonly Random random = new Random();
 
         public static Transaction BuildNewTransactionFromExistingTransaction(Transaction inputTransaction, int index = 0)
         {

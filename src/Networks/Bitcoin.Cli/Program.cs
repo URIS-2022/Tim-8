@@ -56,7 +56,7 @@ namespace Bitcoin.Cli
                 if (argList.Any())
                 {
                     method = argList.First().ToUpper();
-                    if (method is "GET" or "POST" or "DELETE")
+                    if (method == "GET" || method == "POST" || method == "DELETE")
                     {
                         argList.RemoveAt(0);
                     }
@@ -180,12 +180,24 @@ namespace Bitcoin.Cli
                     object commandArgObj = GetAnonymousObjectFromDictionary(commandArgList
                         .Select(a => a.Split('='))
                         .ToDictionary(a => a[0], a => a[1]));
-                    HttpResponseMessage httpResponse = method switch
+
+                    HttpResponseMessage httpResponse;
+
+                    switch (method)
                     {
-                        "POST" => CallApiPost(url, commandArgObj),
-                        "DELETE" => CallApiDelete(url, commandArgObj),
-                        _ => CallApiGet(url, commandArgObj),
-                    };
+                        case "POST":
+                            httpResponse = CallApiPost(url, commandArgObj);
+                            break;
+
+                        case "DELETE":
+                            httpResponse = CallApiDelete(url, commandArgObj);
+                            break;
+
+                        default:
+                            httpResponse = CallApiGet(url, commandArgObj);
+                            break;
+                    }
+
                     var response = httpResponse.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
                     // Format and return the result as a string to the console.

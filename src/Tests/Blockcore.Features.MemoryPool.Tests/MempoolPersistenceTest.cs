@@ -88,7 +88,7 @@ namespace Blockcore.Features.MemoryPool.Tests
 
             MemPoolSaveResult result = persistence.Save(settings.Network, toSave, fileName);
             string fileData = File.ReadAllText(fullFilePath);
-            string badFileData = new(fileData.Take(fileData.Length / 2).ToArray());
+            string badFileData = new string(fileData.Take(fileData.Length / 2).ToArray());
             File.WriteAllText(fullFilePath, badFileData);
             loaded = persistence.Load(settings.Network, fileName);
 

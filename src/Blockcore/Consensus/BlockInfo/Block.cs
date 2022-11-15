@@ -24,7 +24,7 @@ namespace Blockcore.Consensus.BlockInfo
         public long? BlockSize { get; protected set; }
 
         // network and disk
-        private List<Transaction> transactions = new();
+        private List<Transaction> transactions = new List<Transaction>();
 
         public List<Transaction> Transactions { get { return this.transactions; } set { this.transactions = value; } }
 

@@ -333,7 +333,7 @@ namespace Blockcore.Consensus.Chain
             if (ReferenceEquals(a, b))
                 return true;
 
-            if ((a is null) || (b is null))
+            if (((object)a == null) || ((object)b == null))
                 return false;
 
             return a.HashBlock == b.HashBlock;

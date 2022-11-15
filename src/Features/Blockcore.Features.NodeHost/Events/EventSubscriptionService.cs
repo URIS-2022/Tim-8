@@ -30,9 +30,9 @@ namespace Blockcore.Features.NodeHost.Events
         private readonly ISignals signals;
         private readonly ILogger<EventSubscriptionService> log;
 
-        private readonly ConcurrentDictionary<string, SubscriptionToken> subscriptions = new();
-        private readonly ConcurrentDictionary<string, SubscriptionList> consumers = new();
-        private readonly ConcurrentDictionary<string, Type> events = new();
+        private readonly ConcurrentDictionary<string, SubscriptionToken> subscriptions = new ConcurrentDictionary<string, SubscriptionToken>();
+        private readonly ConcurrentDictionary<string, SubscriptionList> consumers = new ConcurrentDictionary<string, SubscriptionList>();
+        private readonly ConcurrentDictionary<string, Type> events = new ConcurrentDictionary<string, Type>();
 
         private IHubContext<EventsHub> hubContext;
 

@@ -50,7 +50,7 @@ namespace Blockcore.Features.PoA
             if (ReferenceEquals(a, b))
                 return true;
 
-            if ((a is null) || (b is null))
+            if (((object)a == null) || ((object)b == null))
                 return false;
 
             return a.PubKey == b.PubKey;
@@ -98,7 +98,7 @@ namespace Blockcore.Features.PoA
             if (ReferenceEquals(a, b))
                 return true;
 
-            if ((a is null) || (b is null))
+            if (((object)a == null) || ((object)b == null))
                 return false;
 
             return (a.PubKey == b.PubKey) && (a.CollateralAmount == b.CollateralAmount) && (a.CollateralMainchainAddress == b.CollateralMainchainAddress);

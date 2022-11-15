@@ -348,7 +348,7 @@ namespace Blockcore.Features.Miner
         private class MineBlockContext
         {
             private readonly ulong amountOfBlocksToMine;
-            public List<uint256> Blocks = new();
+            public List<uint256> Blocks = new List<uint256>();
             public BlockTemplate BlockTemplate { get; set; }
             public ulong ChainHeight { get; set; }
             public ChainedHeaderBlock ChainedHeaderBlock { get; internal set; }

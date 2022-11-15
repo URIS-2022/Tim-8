@@ -26,7 +26,7 @@ namespace NBitcoin.Tests
             this.network = KnownNetworks.Main;
         }
 
-        private static Dictionary<string, OpcodeType> mapOpNames = new();
+        private static Dictionary<string, OpcodeType> mapOpNames = new Dictionary<string, OpcodeType>();
 
         public static Script ParseScript(string s)
         {
@@ -417,8 +417,9 @@ namespace NBitcoin.Tests
 
                 Script wit = null;
                 Money amount = Money.Zero;
-                if (test[i] is JArray array)
+                if (test[i] is JArray)
                 {
+                    var array = (JArray)test[i];
                     for (int ii = 0; ii < array.Count - 1; ii++)
                     {
                         wit += Encoders.Hex.DecodeData(array[ii].ToString());

@@ -1020,7 +1020,7 @@ namespace Blockcore.Tests.BlockPulling
             }
         }
 
-        private readonly Random random = new();
+        private readonly Random random = new Random();
 
         private void Shuffle<T>(IList<T> list)
         {

@@ -65,7 +65,7 @@ namespace Blockcore.Utilities
             if (ReferenceEquals(a, b))
                 return true;
 
-            if (a is null || b is null)
+            if (ReferenceEquals(a, null) || ReferenceEquals(b, null))
                 return false;
 
             return ((a.hash == b.hash) && (a.height == b.height));

@@ -38,7 +38,7 @@ namespace Blockcore.Utilities
             }
 
             // throw if the value is null
-            if (value is null)
+            if (ReferenceEquals(value, null))
             {
                 throw new ArgumentNullException(parameterName);
             }

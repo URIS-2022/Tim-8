@@ -53,7 +53,7 @@ namespace Blockcore.Tests.Common
             ChainedHeader tip = chainIndexer.Tip;
             while (true)
             {
-                if (block is null || tip is null)
+                if (ReferenceEquals(null, block) || ReferenceEquals(null, tip))
                     throw new InvalidOperationException("No fork found between the two chains");
 
                 if (tip.Height > block.Height)

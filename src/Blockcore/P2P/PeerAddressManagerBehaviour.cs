@@ -107,7 +107,7 @@ namespace Blockcore.P2P
                         this.addrPayloadSent = true;
                     }
 
-                    if (message.Message.Payload is PingPayload or PongPayload)
+                    if ((message.Message.Payload is PingPayload) || (message.Message.Payload is PongPayload))
                     {
                         if (peer.State == NetworkPeerState.HandShaked)
                             this.peerAddressManager.PeerSeen(peer.PeerEndPoint, this.dateTimeProvider.GetUtcNow());

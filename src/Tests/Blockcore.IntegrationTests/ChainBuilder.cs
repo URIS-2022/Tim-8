@@ -104,8 +104,8 @@ namespace Blockcore.IntegrationTests
             }
         }
 
-        internal Dictionary<uint256, Block> Blocks = new();
-        private readonly List<Transaction> transactions = new();
+        internal Dictionary<uint256, Block> Blocks = new Dictionary<uint256, Block>();
+        private readonly List<Transaction> transactions = new List<Transaction>();
 
         public void Broadcast(Transaction tx)
         {

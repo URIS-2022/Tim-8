@@ -20,7 +20,7 @@ namespace Blockcore.Features.Dns
         /// <summary>
         /// Sets the default ttl.
         /// </summary>
-        private static readonly TimeSpan DEFAULT_TTL = new(0);
+        private static readonly TimeSpan DEFAULT_TTL = new TimeSpan(0);
 
         /// <summary>
         /// The default time to live.

@@ -717,7 +717,7 @@ namespace NBitcoin.Tests
             bs = new BitcoinStream(ms, false, this.consensusFactory);
 
             roundTrip(bs, ref input);
-            if (input is not byte[]) //Byte serialization reuse the input array
+            if (!(input is byte[])) //Byte serialization reuse the input array
                 Assert.True(before2 != input);
             AssertEx.CollectionEquals(before, input);
         }
@@ -1953,10 +1953,10 @@ namespace NBitcoin.Tests
             {
                 string strTest = test.ToString();
                 //Skip comments
-                if (test[0] is not JArray)
+                if (!(test[0] is JArray))
                     continue;
                 var inputs = (JArray)test[0];
-                if (test.Count != 3 || test[1] is not string || test[2] is not string)
+                if (test.Count != 3 || !(test[1] is string) || !(test[2] is string))
                 {
                     Assert.False(true, "Bad test: " + strTest);
                     continue;
@@ -2072,13 +2072,13 @@ namespace NBitcoin.Tests
             {
                 string strTest = test.ToString();
                 //Skip comments
-                if (test[0] is not JArray)
+                if (!(test[0] is JArray))
                 {
                     comment = test[0].ToString();
                     continue;
                 }
                 var inputs = (JArray)test[0];
-                if (test.Count != 3 || test[1] is not string || test[2] is not string)
+                if (test.Count != 3 || !(test[1] is string) || !(test[2] is string))
                 {
                     Assert.False(true, "Bad test: " + strTest);
                     continue;
@@ -2185,8 +2185,8 @@ namespace NBitcoin.Tests
 
         private class CKeyStore
         {
-            internal List<Tuple<Key, PubKey>> _Keys = new();
-            internal List<Script> _Scripts = new();
+            internal List<Tuple<Key, PubKey>> _Keys = new List<Tuple<Key, PubKey>>();
+            internal List<Script> _Scripts = new List<Script>();
 
             internal void AddKeyPubKey(Key key, PubKey pubkey)
             {

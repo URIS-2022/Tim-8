@@ -106,7 +106,8 @@ namespace Blockcore.Features.Consensus.Rules
         {
             this.prefetcher.Dispose();
 
-            if (this.UtxoSet is CachedCoinView cache)
+            var cache = this.UtxoSet as CachedCoinView;
+            if (cache != null)
             {
                 this.logger.LogInformation("Flushing Cache CoinView.");
                 cache.Flush();

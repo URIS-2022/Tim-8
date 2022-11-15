@@ -17,7 +17,7 @@ namespace Blockcore.Networks.X1.Components
         private readonly ILogger logger;
         private readonly ComputeDevice computeDevice;
 
-        private List<ComputeKernel> computeKernels = new();
+        private List<ComputeKernel> computeKernels = new List<ComputeKernel>();
         private ComputeProgram computeProgram;
         private ComputeContext computeContext;
         private ComputeKernel computeKernel;

@@ -11,7 +11,7 @@ namespace Blockcore.Consensus.Chain
     public class ChainIndexer
     {
         /// <summary>Locks access to <see cref="blocksByHeight"/>, <see cref="blocksById"/>.</summary>
-        private readonly object lockObject = new();
+        private readonly object lockObject = new object();
 
         /// <remarks>This object has to be protected by <see cref="lockObject"/>.</remarks>
         private readonly Dictionary<int, ChainedHeader> blocksByHeight;

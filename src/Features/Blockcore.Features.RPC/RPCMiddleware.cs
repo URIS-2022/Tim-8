@@ -103,7 +103,7 @@ namespace Blockcore.Features.RPC
 
         private async Task<string> ReadRequestAsync(HttpRequest request)
         {
-            if (request.ContentLength is null or 0)
+            if (request.ContentLength == null || request.ContentLength == 0)
             {
                 return string.Empty;
             }
@@ -131,7 +131,7 @@ namespace Blockcore.Features.RPC
 
         private async Task HandleRpcInvokeExceptionAsync(HttpContext httpContext, Exception ex)
         {
-            if (ex is ArgumentException or FormatException)
+            if (ex is ArgumentException || ex is FormatException)
             {
                 JObject response = CreateError(RPCErrorCode.RPC_MISC_ERROR, "Argument error: " + ex.Message);
                 httpContext.Response.ContentType = this.ContentType;
@@ -149,8 +149,9 @@ namespace Blockcore.Features.RPC
                 httpContext.Response.ContentType = this.ContentType;
                 await httpContext.Response.WriteAsync(response.ToString(Formatting.Indented));
             }
-            else if (ex is RPCServerException rpcEx)
+            else if (ex is RPCServerException)
             {
+                var rpcEx = (RPCServerException)ex;
                 JObject response = CreateError(rpcEx.ErrorCode, ex.Message);
                 httpContext.Response.ContentType = this.ContentType;
                 await httpContext.Response.WriteAsync(response.ToString(Formatting.Indented));
@@ -268,7 +269,8 @@ namespace Blockcore.Features.RPC
 
         private bool IsDependencyFailure(Exception ex)
         {
-            if (ex is not InvalidOperationException invalidOp)
+            var invalidOp = ex as InvalidOperationException;
+            if (invalidOp == null)
                 return false;
             return invalidOp.Source.Equals("Microsoft.Extensions.DependencyInjection.Abstractions", StringComparison.Ordinal);
         }

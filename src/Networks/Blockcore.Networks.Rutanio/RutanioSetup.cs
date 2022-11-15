@@ -8,9 +8,9 @@ namespace Rutanio
 {
     internal class RutanioSetup
     {
-        internal static RutanioSetup Instance = new();
+        internal static RutanioSetup Instance = new RutanioSetup();
 
-        internal CoinSetup Setup = new()
+        internal CoinSetup Setup = new CoinSetup
         {
             FileNamePrefix = "Rutanio",
             ConfigFileName = "rutanio.conf",
@@ -26,7 +26,7 @@ namespace Rutanio
             PoSVersion = 3
         };
 
-        internal NetworkSetup Main = new()
+        internal NetworkSetup Main = new NetworkSetup
         {
             Name = "RutanioMain",
             RootFolderName = "rutanio",
@@ -80,7 +80,7 @@ namespace Rutanio
             }
         };
 
-        internal NetworkSetup RegTest = new()
+        internal NetworkSetup RegTest = new NetworkSetup
         {
             Name = "RutanioRegTest",
             RootFolderName = "rutanioregtest",
@@ -108,7 +108,7 @@ namespace Rutanio
         };
 
         //TODO: Update Rutanio parameters
-        internal NetworkSetup Test = new()
+        internal NetworkSetup Test = new NetworkSetup
         {
             Name = "RutanioTest",
             RootFolderName = "rutaniotest",

@@ -18,16 +18,37 @@ namespace Blockcore.Features.Wallet.Api.Controllers
     {
         public static Mnemonic GenerateMnemonic(string language = "English", int wordCount = 12)
         {
-            Wordlist wordList = language.ToLowerInvariant() switch
+            Wordlist wordList;
+            switch (language.ToLowerInvariant())
             {
-                "english" => Wordlist.English,
-                "french" => Wordlist.French,
-                "spanish" => Wordlist.Spanish,
-                "japanese" => Wordlist.Japanese,
-                "chinesetraditional" => Wordlist.ChineseTraditional,
-                "chinesesimplified" => Wordlist.ChineseSimplified,
-                _ => throw new FormatException($"Invalid language '{language}'. Choices are: English, French, Spanish, Japanese, ChineseSimplified and ChineseTraditional."),
-            };
+                case "english":
+                    wordList = Wordlist.English;
+                    break;
+
+                case "french":
+                    wordList = Wordlist.French;
+                    break;
+
+                case "spanish":
+                    wordList = Wordlist.Spanish;
+                    break;
+
+                case "japanese":
+                    wordList = Wordlist.Japanese;
+                    break;
+
+                case "chinesetraditional":
+                    wordList = Wordlist.ChineseTraditional;
+                    break;
+
+                case "chinesesimplified":
+                    wordList = Wordlist.ChineseSimplified;
+                    break;
+
+                default:
+                    throw new FormatException($"Invalid language '{language}'. Choices are: English, French, Spanish, Japanese, ChineseSimplified and ChineseTraditional.");
+            }
+
             var count = (WordCount)wordCount;
 
             // generate the mnemonic

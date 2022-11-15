@@ -37,11 +37,11 @@ namespace Blockcore.Utilities
     /// </summary>
     public class NodeLifetime : INodeLifetime
     {
-        private readonly CancellationTokenSource startedSource = new();
+        private readonly CancellationTokenSource startedSource = new CancellationTokenSource();
 
-        private readonly CancellationTokenSource stoppingSource = new();
+        private readonly CancellationTokenSource stoppingSource = new CancellationTokenSource();
 
-        private readonly CancellationTokenSource stoppedSource = new();
+        private readonly CancellationTokenSource stoppedSource = new CancellationTokenSource();
 
         /// <summary>
         /// Triggered when the application host has fully started and is about to wait

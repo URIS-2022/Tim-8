@@ -36,9 +36,9 @@ namespace Blockcore.IntegrationTests
         public readonly string PremineWalletAccount = "account 0";
         public readonly string PremineWalletPassword = "password";
 
-        private readonly HashSet<uint256> transactionsBeforeStaking = new();
+        private readonly HashSet<uint256> transactionsBeforeStaking = new HashSet<uint256>();
 
-        private readonly ConcurrentDictionary<uint256, TransactionOutputData> txLookup = new();
+        private readonly ConcurrentDictionary<uint256, TransactionOutputData> txLookup = new ConcurrentDictionary<uint256, TransactionOutputData>();
 
         public ProofOfStakeSteps(string displayName)
         {

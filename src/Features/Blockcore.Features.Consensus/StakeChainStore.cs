@@ -32,7 +32,7 @@ namespace Blockcore.Features.Consensus
 
         private readonly int thresholdWindow;
 
-        private readonly ConcurrentDictionary<uint256, StakeItem> items = new();
+        private readonly ConcurrentDictionary<uint256, StakeItem> items = new ConcurrentDictionary<uint256, StakeItem>();
 
         private readonly BlockStake genesis;
 

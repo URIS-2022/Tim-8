@@ -12,7 +12,7 @@ namespace Blockcore.Networks.Strax.Policies
         public const int MaxOpReturnRelay = 83;
 
         // Need a network-specific version of the template list
-        private static readonly List<ScriptTemplate> standardTemplates = new()
+        private static readonly List<ScriptTemplate> standardTemplates = new List<ScriptTemplate>
         {
             new PayToPubkeyHashTemplate(),
             new PayToPubkeyTemplate(),

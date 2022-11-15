@@ -49,7 +49,7 @@ namespace Blockcore.IntegrationTests
     /// </summary>
     internal class TestBehavior : NetworkPeerBehavior
     {
-        public readonly Dictionary<string, List<IncomingMessage>> receivedMessageTracker = new();
+        public readonly Dictionary<string, List<IncomingMessage>> receivedMessageTracker = new Dictionary<string, List<IncomingMessage>>();
 
         protected override void AttachCore()
         {

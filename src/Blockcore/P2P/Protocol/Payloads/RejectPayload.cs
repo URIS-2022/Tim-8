@@ -32,7 +32,7 @@ namespace Blockcore.P2P.Protocol.Payloads
     public class RejectPayload : Payload
     {
         /// <summary>"tx" or "block".</summary>
-        private VarString message = new();
+        private VarString message = new VarString();
 
         /// <summary>"tx" or "block".</summary>
         public string Message
@@ -64,7 +64,7 @@ namespace Blockcore.P2P.Protocol.Payloads
         }
 
         /// <summary>Details of the error.</summary>
-        private VarString reason = new();
+        private VarString reason = new VarString();
 
         /// <summary>Details of the error.</summary>
         public string Reason
@@ -126,7 +126,7 @@ namespace Blockcore.P2P.Protocol.Payloads
             stream.ReadWrite(ref this.message);
             stream.ReadWrite(ref this.code);
             stream.ReadWrite(ref this.reason);
-            if (this.Message is "tx" or "block")
+            if ((this.Message == "tx") || (this.Message == "block"))
                 stream.ReadWrite(ref this.hash);
         }
     }

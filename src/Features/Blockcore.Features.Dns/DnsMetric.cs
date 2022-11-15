@@ -30,7 +30,7 @@ namespace Blockcore.Features.Dns
         /// <summary>
         /// Defines the current snapshot.
         /// </summary>
-        private DnsMetricSnapshot snapshot = new();
+        private DnsMetricSnapshot snapshot = new DnsMetricSnapshot();
 
         /// <summary>
         /// Gets the total number of DNS requests issued to the DNS server since the start of the application.

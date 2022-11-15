@@ -17,7 +17,7 @@ namespace Rutanio.Networks.Policies
         public const int MaxOpReturnRelay = 83;
 
         // Need a network-specific version of the template list
-        private readonly List<ScriptTemplate> standardTemplates = new()
+        private readonly List<ScriptTemplate> standardTemplates = new List<ScriptTemplate>
         {
             PayToPubkeyHashTemplate.Instance,
             PayToPubkeyTemplate.Instance,

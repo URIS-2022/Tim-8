@@ -17,7 +17,7 @@ namespace Blockcore.Features.Consensus.Rules.CommonRules
         {
             Block block = context.ValidationContext.BlockToValidate;
 
-            if (block is not PosBlock posBlock)
+            if (!(block is PosBlock posBlock))
             {
                 this.Logger.LogTrace("(-)[INVALID_CAST]");
                 throw new InvalidCastException();

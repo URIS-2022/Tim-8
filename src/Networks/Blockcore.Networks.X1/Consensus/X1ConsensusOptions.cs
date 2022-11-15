@@ -110,7 +110,7 @@ namespace Blockcore.Networks.X1.Consensus
         }
 
 
-        private readonly object lockObj = new();
+        private readonly object lockObj = new object();
 
         public Target GetNextTargetRequired(ChainedHeader currentChainTip, bool isChainTipProofOfStake, IConsensus consensus, bool isTargetRequestedForProofOfStake)
         {
@@ -322,13 +322,17 @@ namespace Blockcore.Networks.X1.Consensus
 
         private int GetPosPowRatchetIsActiveHeight()
         {
-            return this.currentNetwork.NetworkType switch
+            switch (this.currentNetwork.NetworkType)
             {
-                NetworkType.Mainnet => PosPowRatchetIsActiveHeightMainNet,
-                NetworkType.Testnet => PosPowRatchetIsActiveHeightTestNet,
-                NetworkType.Regtest => PosPowRatchetIsActiveHeightInvalid,
-                _ => PosPowRatchetIsActiveHeightInvalid,
-            };
+                case NetworkType.Mainnet:
+                    return PosPowRatchetIsActiveHeightMainNet;
+                case NetworkType.Testnet:
+                    return PosPowRatchetIsActiveHeightTestNet;
+                case NetworkType.Regtest:
+                    return PosPowRatchetIsActiveHeightInvalid;
+            }
+
+            return PosPowRatchetIsActiveHeightInvalid;
         }
 
         // ReSharper disable once ParameterOnlyUsedForPreconditionCheck.Local

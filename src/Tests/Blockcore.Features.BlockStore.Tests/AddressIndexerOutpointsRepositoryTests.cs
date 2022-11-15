@@ -15,7 +15,7 @@ namespace Blockcore.Features.BlockStore.Tests
     {
         private readonly AddressIndexerOutpointsRepository repository;
 
-        private readonly Random random = new();
+        private readonly Random random = new Random();
 
         private readonly int maxItems = 10;
 

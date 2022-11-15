@@ -8,9 +8,9 @@ namespace Blockcore.Networks.x42
 {
     internal class x42Setup
     {
-        internal static x42Setup Instance = new();
+        internal static x42Setup Instance = new x42Setup();
 
-        internal CoinSetup Setup = new()
+        internal CoinSetup Setup = new CoinSetup
         {
             FileNamePrefix = "x42",
             ConfigFileName = "x42.conf",
@@ -30,7 +30,7 @@ namespace Blockcore.Networks.x42
             PoSVersion = 3
         };
 
-        internal NetworkSetup Main = new()
+        internal NetworkSetup Main = new NetworkSetup
         {
             Name = "x42Main",
             RootFolderName = "x42",
@@ -66,7 +66,7 @@ namespace Blockcore.Networks.x42
             }
         };
 
-        internal NetworkSetup RegTest = new()
+        internal NetworkSetup RegTest = new NetworkSetup
         {
             Name = "x42RegTest",
             RootFolderName = "x42",
@@ -93,7 +93,7 @@ namespace Blockcore.Networks.x42
             }
         };
 
-        internal NetworkSetup Test = new()
+        internal NetworkSetup Test = new NetworkSetup
         {
             Name = "x42Test",
             RootFolderName = "x42",

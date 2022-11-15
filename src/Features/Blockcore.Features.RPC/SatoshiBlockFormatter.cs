@@ -103,7 +103,8 @@ namespace Blockcore.Features.RPC
 
             if (!string.IsNullOrEmpty(rpcBlock.signature))
             {
-                if (block is not PosBlock posBlock)
+                var posBlock = block as PosBlock;
+                if (posBlock == null)
                     throw new Exception();
 
                 posBlock.BlockSignature.Signature = Encoders.Hex.DecodeData(rpcBlock.signature);

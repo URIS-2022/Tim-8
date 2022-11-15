@@ -13,7 +13,7 @@ namespace Blockcore.Features.PoA.BasePoAFeatureConsensusRules
     /// </remarks>
     public class PoAHeaderDifficultyRule : HeaderValidationConsensusRule
     {
-        public static readonly Target PoABlockDifficulty = new(uint256.Parse("00000000ffff0000000000000000000000000000000000000000000000000000"));
+        public static readonly Target PoABlockDifficulty = new Target(uint256.Parse("00000000ffff0000000000000000000000000000000000000000000000000000"));
 
         public override void Run(RuleContext context)
         {

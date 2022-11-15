@@ -15,7 +15,7 @@ namespace Blockcore.Features.PoA.Policies
         // No legacy clients exist for this network with the constraint of 40 bytes
         public const int MaxOpReturnRelay = 83;
 
-        private readonly List<ScriptTemplate> standardTemplates = new()
+        private readonly List<ScriptTemplate> standardTemplates = new List<ScriptTemplate>
         {
             PayToPubkeyHashTemplate.Instance,
             PayToPubkeyTemplate.Instance,

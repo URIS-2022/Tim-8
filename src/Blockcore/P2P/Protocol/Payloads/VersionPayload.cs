@@ -97,7 +97,7 @@ namespace Blockcore.P2P.Protocol.Payloads
             }
         }
 
-        private NetworkAddress addressReceiver = new();
+        private NetworkAddress addressReceiver = new NetworkAddress();
 
         public IPEndPoint AddressReceiver
         {
@@ -112,7 +112,7 @@ namespace Blockcore.P2P.Protocol.Payloads
             }
         }
 
-        private NetworkAddress addressFrom = new();
+        private NetworkAddress addressFrom = new NetworkAddress();
 
         public IPEndPoint AddressFrom
         {

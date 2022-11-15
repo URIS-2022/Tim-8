@@ -79,12 +79,14 @@ namespace Blockcore.Utilities.JsonConverters
                 this.Value = ((Coin)coin).Amount;
             }
 
-            if (coin is ColoredCoin cc)
+            if (coin is ColoredCoin)
             {
+                var cc = (ColoredCoin)coin;
                 this.AssetId = cc.AssetId.GetWif(network);
                 this.Quantity = cc.Amount.Quantity;
                 this.Value = cc.Bearer.Amount;
-                if (cc.Bearer is ScriptCoin scc)
+                var scc = cc.Bearer as ScriptCoin;
+                if (scc != null)
                 {
                     this.RedeemScript = scc.Redeem;
                 }

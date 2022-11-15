@@ -11,7 +11,7 @@ namespace Blockcore.Networks
     /// </summary>
     public static class NetworkRegistration
     {
-        private static readonly ConcurrentDictionary<string, Network> RegisteredNetworks = new();
+        private static readonly ConcurrentDictionary<string, Network> RegisteredNetworks = new ConcurrentDictionary<string, Network>();
 
         /// <summary>
         /// Register an immutable <see cref="Network"/> instance so it is queryable through <see cref="GetNetwork"/> and <see cref="GetNetworks"/>.
