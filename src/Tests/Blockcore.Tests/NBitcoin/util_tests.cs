@@ -361,7 +361,7 @@ namespace NBitcoin.Tests
             Assert.True(splitted.Sum() == money);
             IEnumerable<IGrouping<long, long>> groups = splitted.Select(s => s.Satoshi).GroupBy(o => o);
             int differentValues = groups.Count();
-            Assert.True(differentValues == 1 || differentValues == 2);
+            Assert.True(differentValues is 1 or 2);
         }
 
         [Fact]
@@ -403,7 +403,7 @@ namespace NBitcoin.Tests
             Assert.True(splitted.Sum(asset) == money);
             IEnumerable<IGrouping<long, long>> groups = splitted.Select(s => s.Quantity).GroupBy(o => o);
             int differentValues = groups.Count();
-            Assert.True(differentValues == 1 || differentValues == 2);
+            Assert.True(differentValues is 1 or 2);
         }
 
         [Fact]

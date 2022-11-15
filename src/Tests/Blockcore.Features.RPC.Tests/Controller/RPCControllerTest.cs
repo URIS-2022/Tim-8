@@ -218,12 +218,12 @@ namespace Blockcore.Features.RPC.Tests.Controller
 
         private class RPCResponseObject
         {
-            public BlockHeaderObject result = new BlockHeaderObject()
+            public BlockHeaderObject result = new()
             {
                 hashPrevBlock = KnownNetworks.TestNet.GenesisHash.ToString()
             };
 
-            public RPCErrorObject error = new RPCErrorObject()
+            public RPCErrorObject error = new()
             {
                 code = 0,
                 message = null

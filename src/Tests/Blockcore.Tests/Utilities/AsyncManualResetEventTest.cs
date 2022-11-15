@@ -12,7 +12,7 @@ namespace Blockcore.Tests.Utilities
     public class AsyncManualResetEventTest
     {
         /// <summary>Source of randomness.</summary>
-        private readonly Random random = new Random();
+        private readonly Random random = new();
 
         [Fact]
         public async Task AsyncManualResetEvent_WaitAsync()

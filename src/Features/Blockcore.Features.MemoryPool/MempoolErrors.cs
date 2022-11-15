@@ -116,106 +116,106 @@ namespace Blockcore.Features.MemoryPool
         public const int RejectConflict = 0x102;
 
         /// <summary>'coinbase' error returns a <see cref="RejectInvalid"/> reject code.</summary>
-        public static MempoolError Coinbase = new MempoolError(RejectInvalid, "coinbase");
+        public static MempoolError Coinbase = new(RejectInvalid, "coinbase");
 
         /// <summary>'coinstake' error returns a <see cref="RejectInvalid"/> reject code.</summary>
-        public static MempoolError Coinstake = new MempoolError(RejectInvalid, "coinstake");
+        public static MempoolError Coinstake = new(RejectInvalid, "coinstake");
 
         /// <summary>'non-final' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError NonFinal = new MempoolError(RejectNonstandard, "non-final");
+        public static MempoolError NonFinal = new(RejectNonstandard, "non-final");
 
         /// <summary>'txn-already-in-mempool' error returns a <see cref="RejectAlreadyKnown"/> reject code.</summary>
-        public static MempoolError InPool = new MempoolError(RejectAlreadyKnown, "txn-already-in-mempool");
+        public static MempoolError InPool = new(RejectAlreadyKnown, "txn-already-in-mempool");
 
         /// <summary>'txn-mempool-conflict' error returns a <see cref="RejectConflict"/> reject code.</summary>
-        public static MempoolError Conflict = new MempoolError(RejectConflict, "txn-mempool-conflict");
+        public static MempoolError Conflict = new(RejectConflict, "txn-mempool-conflict");
 
         /// <summary>'bad-txns-nonstandard-inputs' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError NonstandardInputs = new MempoolError(RejectNonstandard, "bad-txns-nonstandard-inputs");
+        public static MempoolError NonstandardInputs = new(RejectNonstandard, "bad-txns-nonstandard-inputs");
 
         /// <summary>'bad-witness-nonstandard' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError NonstandardWitness = new MempoolError(RejectNonstandard, "bad-witness-nonstandard");
+        public static MempoolError NonstandardWitness = new(RejectNonstandard, "bad-witness-nonstandard");
 
         /// <summary>'bad-txns-too-many-sigops' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError TooManySigops = new MempoolError(RejectNonstandard, "bad-txns-too-many-sigops");
+        public static MempoolError TooManySigops = new(RejectNonstandard, "bad-txns-too-many-sigops");
 
         /// <summary>'mempool-full' error returns a <see cref="RejectInsufficientfee"/> reject code.</summary>
-        public static MempoolError Full = new MempoolError(RejectInsufficientfee, "mempool-full");
+        public static MempoolError Full = new(RejectInsufficientfee, "mempool-full");
 
         /// <summary>'insufficient-fee' error returns a <see cref="RejectInsufficientfee"/> reject code.</summary>
-        public static MempoolError InsufficientFee = new MempoolError(RejectInsufficientfee, "insufficient-fee");
+        public static MempoolError InsufficientFee = new(RejectInsufficientfee, "insufficient-fee");
 
         /// <summary>'txn-already-known' error returns a <see cref="RejectAlreadyKnown"/> reject code.</summary>
-        public static MempoolError AlreadyKnown = new MempoolError(RejectAlreadyKnown, "txn-already-known");
+        public static MempoolError AlreadyKnown = new(RejectAlreadyKnown, "txn-already-known");
 
         /// <summary>'bad-txns-inputs-missing' error returns a <see cref="RejectInvalid"/> reject code.</summary>
-        public static MempoolError MissingOrSpentInputs = new MempoolError(RejectInvalid, "bad-txns-inputs-missingorspent");
+        public static MempoolError MissingOrSpentInputs = new(RejectInvalid, "bad-txns-inputs-missingorspent");
 
         /// <summary>'non-BIP68-final' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError NonBIP68Final = new MempoolError(RejectNonstandard, "non-BIP68-final");
+        public static MempoolError NonBIP68Final = new(RejectNonstandard, "non-BIP68-final");
 
         /// <summary>'mempool-min-fee-not-met' error returns a <see cref="RejectInsufficientfee"/> reject code.</summary>
-        public static MempoolError MinFeeNotMet = new MempoolError(RejectInsufficientfee, "mempool-min-fee-not-met");
+        public static MempoolError MinFeeNotMet = new(RejectInsufficientfee, "mempool-min-fee-not-met");
 
         /// <summary>'insufficient-priority' error returns a <see cref="RejectInsufficientfee"/> reject code.</summary>
-        public static MempoolError InsufficientPriority = new MempoolError(RejectInsufficientfee, "insufficient-priority");
+        public static MempoolError InsufficientPriority = new(RejectInsufficientfee, "insufficient-priority");
 
         /// <summary>'absurdly-high-fee' error returns a <see cref="RejectHighfee"/> reject code.</summary>
-        public static MempoolError AbsurdlyHighFee = new MempoolError(RejectHighfee, $"absurdly-high-fee");
+        public static MempoolError AbsurdlyHighFee = new(RejectHighfee, $"absurdly-high-fee");
 
         /// <summary>'too-long-mempool-chain' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError TooLongMempoolChain = new MempoolError(RejectNonstandard, "too-long-mempool-chain");
+        public static MempoolError TooLongMempoolChain = new(RejectNonstandard, "too-long-mempool-chain");
 
         /// <summary>'bad-txns-spends-conflicting-tx' error returns a <see cref="RejectInvalid"/> reject code.</summary>
-        public static MempoolError BadTxnsSpendsConflictingTx = new MempoolError(RejectInvalid, "bad-txns-spends-conflicting-tx");
+        public static MempoolError BadTxnsSpendsConflictingTx = new(RejectInvalid, "bad-txns-spends-conflicting-tx");
 
         /// <summary>'too-many-potential-replacements' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static readonly MempoolError TooManyPotentialReplacements = new MempoolError(RejectNonstandard, "too-many-potential-replacements");
+        public static readonly MempoolError TooManyPotentialReplacements = new(RejectNonstandard, "too-many-potential-replacements");
 
         /// <summary>'replacement-adds-unconfirmed' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError ReplacementAddsUnconfirmed = new MempoolError(RejectNonstandard, "replacement-adds-unconfirmed");
+        public static MempoolError ReplacementAddsUnconfirmed = new(RejectNonstandard, "replacement-adds-unconfirmed");
 
         /// <summary>'insufficient-fee' error returns a <see cref="RejectInsufficientfee"/> reject code.</summary>
-        public static MempoolError Insufficientfee = new MempoolError(RejectInsufficientfee, "insufficient-fee");
+        public static MempoolError Insufficientfee = new(RejectInsufficientfee, "insufficient-fee");
 
         /// <summary>'mandatory-script-verify-flag-failed' error returns a <see cref="RejectInvalid"/> reject code.</summary>
-        public static MempoolError MandatoryScriptVerifyFlagFailed = new MempoolError(RejectInvalid, "mandatory-script-verify-flag-failed");
+        public static MempoolError MandatoryScriptVerifyFlagFailed = new(RejectInvalid, "mandatory-script-verify-flag-failed");
 
         /// <summary>'non-mandatory-script-verify-flag' error returns a <see cref="RejectNonstandard"/> reject code.</summary>
-        public static MempoolError NonMandatoryScriptVerifyFlagFailed = new MempoolError(RejectNonstandard, "non-mandatory-script-verify-flag");
+        public static MempoolError NonMandatoryScriptVerifyFlagFailed = new(RejectNonstandard, "non-mandatory-script-verify-flag");
 
         /// <summary>'version' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError Version = new MempoolError(RejectNonstandard, "version");
+        public static MempoolError Version = new(RejectNonstandard, "version");
 
         /// <summary>'tx-size' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError TxSize = new MempoolError(RejectNonstandard, "tx-size");
+        public static MempoolError TxSize = new(RejectNonstandard, "tx-size");
 
         /// <summary>'scriptsig-size' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError ScriptsigSize = new MempoolError(RejectNonstandard, "scriptsig-size");
+        public static MempoolError ScriptsigSize = new(RejectNonstandard, "scriptsig-size");
 
         /// <summary>'scriptsig-not-pushonly' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError ScriptsigNotPushonly = new MempoolError(RejectNonstandard, "scriptsig-not-pushonly");
+        public static MempoolError ScriptsigNotPushonly = new(RejectNonstandard, "scriptsig-not-pushonly");
 
         /// <summary>'scriptpubkey' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError Scriptpubkey = new MempoolError(RejectNonstandard, "scriptpubkey");
+        public static MempoolError Scriptpubkey = new(RejectNonstandard, "scriptpubkey");
 
         /// <summary>'dust' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError Dust = new MempoolError(RejectNonstandard, "dust");
+        public static MempoolError Dust = new(RejectNonstandard, "dust");
 
         /// <summary>'multi-op-return' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError MultiOpReturn = new MempoolError(RejectNonstandard, "multi-op-return");
+        public static MempoolError MultiOpReturn = new(RejectNonstandard, "multi-op-return");
 
         /// <summary>'time-too-new' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError TimeTooNew = new MempoolError(RejectNonstandard, "time-too-new");
+        public static MempoolError TimeTooNew = new(RejectNonstandard, "time-too-new");
 
         /// <summary>'no-witness-yet' error returns a <see cref="RejectNonStandard"/> reject code.</summary>
-        public static MempoolError NoWitnessYet = new MempoolError(RejectNonstandard, "no-witness-yet");
+        public static MempoolError NoWitnessYet = new(RejectNonstandard, "no-witness-yet");
 
         /// <summary>'mempool-tx-contains-dust-outputs' error returns a <see cref="RejectInvalid"/> reject code.</summary>
-        public static MempoolError TransactionContainsDustTxOuts = new MempoolError(RejectInvalid, "mempool-tx-contains-dust-outputs");
+        public static MempoolError TransactionContainsDustTxOuts = new(RejectInvalid, "mempool-tx-contains-dust-outputs");
 
         // TODO: It is not clear from the Bitcoin Core source what the actual message is supposed to be in this case. Chose witness-mutated as an unambiguous message.
         /// <summary>'witness-mutated' error returns a <see cref="RejectInvalid"/> reject code.</summary>
-        public static MempoolError WitnessMutated = new MempoolError(RejectInvalid, "witness-mutated");
+        public static MempoolError WitnessMutated = new(RejectInvalid, "witness-mutated");
     }
 }

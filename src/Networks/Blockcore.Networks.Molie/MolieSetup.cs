@@ -48,7 +48,7 @@ namespace Blockcore.Networks.Molie
             public const string HashGenesisBlock = "0x000002a1ad0e9fa339c1074f97f7f7de25dac50865966c6d8d8a075026373a5c";
             public const string HashMerkleRoot = "0x9f9930c2112eb4fc90d4abfa4085708d2e913c8cd638335be715e48601292bed";
 
-            public static List<DNSSeedData> DNS = new List<DNSSeedData>
+            public static List<DNSSeedData> DNS = new()
             {
                 new DNSSeedData("seed1", "mol.molie.net"),
                 new DNSSeedData("seed2", "mol1.molie.net"),
@@ -61,13 +61,13 @@ namespace Blockcore.Networks.Molie
                 new DNSSeedData("seed9", "seed4.impleum.com")
             };
 
-            public static List<NetworkAddress> Nodes = new List<NetworkAddress>
+            public static List<NetworkAddress> Nodes = new()
             {
                 //    new NetworkAddress(IPAddress.Parse("109.108.77.134"), DefaultPort),
                 //   new NetworkAddress(IPAddress.Parse("62.80.181.141"), DefaultPort)
             };
 
-            public static Dictionary<int, CheckpointInfo> Checkpoints = new Dictionary<int, CheckpointInfo>
+            public static Dictionary<int, CheckpointInfo> Checkpoints = new()
             {
                 { 0, new CheckpointInfo(new uint256("0x000002a1ad0e9fa339c1074f97f7f7de25dac50865966c6d8d8a075026373a5c"), new uint256("0x0000000000000000000000000000000000000000000000000000000000000000")) },
                 { 10, new CheckpointInfo(new uint256("0x4d1c528735266dbf999d070b5a18f54e535f87084bbe92e8febaa5bb2db6c74b"), new uint256("0xd50af11c4d301bfec5a4b5d1f46e0a751aac640da1bbbc31ac0db1af5b585f44")) },
@@ -111,7 +111,7 @@ namespace Blockcore.Networks.Molie
             public const string HashGenesisBlock = "0x000e5a32f82051916e14cdb9ccc4c7146c106349a0622df5d122410934554912";
             public const string HashMerkleRoot = "0x15a4348986e906634ff05ae5cdf208d0c297b3542b86a2919cbf03c7b5bddace";
 
-            public static List<DNSSeedData> DNS = new List<DNSSeedData>
+            public static List<DNSSeedData> DNS = new()
             {
                 new DNSSeedData("seed1", "mol.molie.net"),
                 new DNSSeedData("seed2", "mol1.molie.net"),
@@ -124,13 +124,13 @@ namespace Blockcore.Networks.Molie
                 new DNSSeedData("seed9", "seed4.impleum.com")
             };
 
-            public static List<NetworkAddress> Nodes = new List<NetworkAddress>
+            public static List<NetworkAddress> Nodes = new()
             {
                 //new NetworkAddress(IPAddress.Parse("109.108.77.134"), DefaultPort),
                 //new NetworkAddress(IPAddress.Parse("62.80.181.141"), DefaultPort),
             };
 
-            public static Dictionary<int, CheckpointInfo> Checkpoints = new Dictionary<int, CheckpointInfo>
+            public static Dictionary<int, CheckpointInfo> Checkpoints = new()
             {
 
             };
@@ -158,7 +158,7 @@ namespace Blockcore.Networks.Molie
             public const string HashGenesisBlock = "0x000083c58f9fc90470670c6ccee600f8db5837fc38f6b0d19d3984234d2ec8e3";
             public const string HashMerkleRoot = "0x81ff297a766f945a1c4c536969900ca4fa5f3bd359d567ada6adb1accf063626";
 
-            public static List<DNSSeedData> DNS = new List<DNSSeedData>
+            public static List<DNSSeedData> DNS = new()
             {
                 new DNSSeedData("seed1", "mol.molie.net"),
                 new DNSSeedData("seed2", "mol1.molie.net"),
@@ -171,13 +171,13 @@ namespace Blockcore.Networks.Molie
                 new DNSSeedData("seed9", "seed4.impleum.com")
             };
 
-            public static List<NetworkAddress> Nodes = new List<NetworkAddress>
+            public static List<NetworkAddress> Nodes = new()
             {
                 //new NetworkAddress(IPAddress.Parse("109.108.77.134"), DefaultPort),
                 //new NetworkAddress(IPAddress.Parse("62.80.181.141"), DefaultPort)
             };
 
-            public static Dictionary<int, CheckpointInfo> Checkpoints = new Dictionary<int, CheckpointInfo>
+            public static Dictionary<int, CheckpointInfo> Checkpoints = new()
             {
                 // TODO: Add checkpoints as the network progresses.
             };

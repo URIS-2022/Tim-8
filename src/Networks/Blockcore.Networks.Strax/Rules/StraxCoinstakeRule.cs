@@ -23,7 +23,7 @@ namespace Blockcore.Networks.Strax.Rules
 
         // The redeem script is defined first (and separately) because it is needed for claiming the reward.
         // It is not the scriptPubKey that must appear in the reward transaction output.
-        public static readonly Script CirrusRewardScriptRedeem = new Script(new List<Op>() { OpcodeType.OP_TRUE });
+        public static readonly Script CirrusRewardScriptRedeem = new(new List<Op>() { OpcodeType.OP_TRUE });
 
         // This payment script is what must actually be checked against in the consensus rule i.e. the reward transaction has this as an output's scriptPubKey.
         public static readonly Script CirrusRewardScript = CirrusRewardScriptRedeem.PaymentScript;

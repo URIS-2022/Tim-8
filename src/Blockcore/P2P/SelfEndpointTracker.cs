@@ -12,7 +12,7 @@ namespace Blockcore.P2P
     public class SelfEndpointTracker : ISelfEndpointTracker
     {
         /// <summary>Hashset to hold the endpoints currently known to be itself.</summary>
-        private readonly ConcurrentHashSet<IPEndPoint> knownSelfEndpoints = new ConcurrentHashSet<IPEndPoint>();
+        private readonly ConcurrentHashSet<IPEndPoint> knownSelfEndpoints = new();
 
         /// <summary>Instance logger.</summary>
         private readonly ILogger logger;

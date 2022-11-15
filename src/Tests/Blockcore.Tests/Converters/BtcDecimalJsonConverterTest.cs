@@ -10,7 +10,7 @@ namespace Blockcore.Tests.Converters
     {
         private readonly ITestOutputHelper console;
 
-        private readonly JsonSerializerSettings jsonSerializerSettings = new JsonSerializerSettings
+        private readonly JsonSerializerSettings jsonSerializerSettings = new()
         {
             Converters = new List<JsonConverter>
             {

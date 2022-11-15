@@ -11,7 +11,7 @@ namespace Blockcore.P2P.Protocol.Payloads
     /// </summary>
     public class NotFoundPayload : Payload, IEnumerable<InventoryVector>
     {
-        private List<InventoryVector> inventory = new List<InventoryVector>();
+        private List<InventoryVector> inventory = new();
 
         public List<InventoryVector> Inventory { get { return this.inventory; } }
 

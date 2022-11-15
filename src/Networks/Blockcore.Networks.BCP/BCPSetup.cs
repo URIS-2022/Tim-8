@@ -8,9 +8,9 @@ namespace Blockcore.Networks.BCP
 {
     internal class BCPSetup
     {
-        internal static BCPSetup Instance = new BCPSetup();
+        internal static BCPSetup Instance = new();
 
-        internal CoinSetup Setup = new CoinSetup
+        internal CoinSetup Setup = new()
         {
             FileNamePrefix = "bcp",
             ConfigFileName = "bcp.conf",
@@ -26,7 +26,7 @@ namespace Blockcore.Networks.BCP
             PoSVersion = 4
         };
 
-        internal NetworkSetup Main = new NetworkSetup
+        internal NetworkSetup Main = new()
         {
             Name = "BCPMain",
             RootFolderName = "bcp",
@@ -52,7 +52,7 @@ namespace Blockcore.Networks.BCP
             }
         };
 
-        internal NetworkSetup RegTest = new NetworkSetup
+        internal NetworkSetup RegTest = new()
         {
             Name = "BCPRegTest",
             RootFolderName = "bcpregtest",
@@ -78,7 +78,7 @@ namespace Blockcore.Networks.BCP
             }
         };
 
-        internal NetworkSetup Test = new NetworkSetup
+        internal NetworkSetup Test = new()
         {
             Name = "BCPTest",
             RootFolderName = "bcptest",

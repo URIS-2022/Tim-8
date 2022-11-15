@@ -650,7 +650,7 @@ namespace Blockcore.Features.Wallet.Database
 
     internal class CollectionOfuint256Handler : SqliteTypeHandler<ICollection<uint256>>
     {
-        private static readonly JsonSerializerSettings Converters = new JsonSerializerSettings
+        private static readonly JsonSerializerSettings Converters = new()
         {
             Converters = new List<JsonConverter> { new UInt256JsonConverter() }
         };
@@ -682,7 +682,7 @@ namespace Blockcore.Features.Wallet.Database
 
     internal class CollectionOfPaymentDetailsHandler : SqliteTypeHandler<ICollection<PaymentDetails>>
     {
-        private static readonly JsonSerializerSettings Converters = new JsonSerializerSettings
+        private static readonly JsonSerializerSettings Converters = new()
         {
             Converters = new List<JsonConverter> { new MoneyJsonConverter(), new ScriptJsonConverter() }
         };

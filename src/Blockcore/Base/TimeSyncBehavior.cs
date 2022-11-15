@@ -135,7 +135,7 @@ namespace Blockcore.Base
 
         /// <summary>Lock object to protect access to <see cref="timeOffset"/>, <see cref="inboundTimestampOffsets"/>, <see cref="outboundTimestampOffsets"/>,
         /// <see cref="inboundSampleSources"/>, <see cref="outboundSampleSources"/>.</summary>
-        private readonly object lockObject = new object();
+        private readonly object lockObject = new();
 
         /// <summary>Time difference that the behavior adds to the system time to form adjusted time.</summary>
         /// <remarks>All access to this object has to be protected by <see cref="lockObject"/>.</remarks>

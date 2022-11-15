@@ -123,7 +123,7 @@ namespace Blockcore.Networks.Strax
 
         }
 
-        public static readonly Dictionary<NetworkType, Func<Network>> MainChainNetworks = new Dictionary<NetworkType, Func<Network>>
+        public static readonly Dictionary<NetworkType, Func<Network>> MainChainNetworks = new()
         {
             { NetworkType.Mainnet, Networks.Strax.Mainnet },
             { NetworkType.Testnet, Networks.Strax.Testnet },

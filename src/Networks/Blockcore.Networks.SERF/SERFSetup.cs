@@ -8,9 +8,9 @@ namespace Blockcore.Networks.SERF
 {
     internal class SERFSetup
     {
-        internal static SERFSetup Instance = new SERFSetup();
+        internal static SERFSetup Instance = new();
 
-        internal CoinSetup Setup = new CoinSetup
+        internal CoinSetup Setup = new()
         {
             FileNamePrefix = "serf",
             ConfigFileName = "serf.conf",
@@ -26,7 +26,7 @@ namespace Blockcore.Networks.SERF
             PoSVersion = 4
         };
 
-        internal NetworkSetup Main = new NetworkSetup
+        internal NetworkSetup Main = new()
         {
             Name = "SERFMain",
             RootFolderName = "serf",
@@ -55,7 +55,7 @@ namespace Blockcore.Networks.SERF
          }
         };
 
-        internal NetworkSetup RegTest = new NetworkSetup
+        internal NetworkSetup RegTest = new()
         {
             Name = "SERFRegTest",
             RootFolderName = "serfregtest",
@@ -81,7 +81,7 @@ namespace Blockcore.Networks.SERF
             }
         };
 
-        internal NetworkSetup Test = new NetworkSetup
+        internal NetworkSetup Test = new()
         {
             Name = "SERFTest",
             RootFolderName = "serftest",

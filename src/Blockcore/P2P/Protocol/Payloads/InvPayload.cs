@@ -17,7 +17,7 @@ namespace Blockcore.P2P.Protocol.Payloads
 
         public const int MaxInventorySize = 50000;
 
-        private List<InventoryVector> inventory = new List<InventoryVector>();
+        private List<InventoryVector> inventory = new();
 
         public List<InventoryVector> Inventory { get { return this.inventory; } }
 

@@ -63,7 +63,7 @@ namespace Blockcore.Features.MemoryPool
         private long nNextSweep;
 
         /// <summary> Object for generating random numbers used for randomly purging orphans.</summary>
-        private readonly Random random = new Random();
+        private readonly Random random = new();
 
         /// <summary>Location on chain when rejects are validated.</summary>
         private uint256 hashRecentRejectsChainTip;

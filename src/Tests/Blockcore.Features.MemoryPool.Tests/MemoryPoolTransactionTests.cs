@@ -568,7 +568,7 @@ namespace Blockcore.Features.MemoryPool.Tests
         private int nHeight = 1;
         private bool spendsCoinbase = false;
         private long sigOpCost = 4;
-        private readonly LockPoints lp = new LockPoints();
+        private readonly LockPoints lp = new();
 
         public TxMempoolEntry FromTx(Transaction tx, TxMempool pool = null)
         {

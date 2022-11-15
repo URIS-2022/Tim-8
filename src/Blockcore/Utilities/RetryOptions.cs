@@ -38,7 +38,7 @@ namespace Blockcore.Utilities
             this.Type = type;
         }
 
-        public static RetryOptions Default => new RetryOptions();
+        public static RetryOptions Default => new();
 
         public RetryStrategyType Type { get; }
 

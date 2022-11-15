@@ -16,7 +16,7 @@ namespace Blockcore.Networks.x42.Networks.Policies
         public const int MaxOpReturnRelay = 83;
 
         // Need a network-specific version of the template list
-        private readonly List<ScriptTemplate> standardTemplates = new List<ScriptTemplate>
+        private readonly List<ScriptTemplate> standardTemplates = new()
         {
             PayToPubkeyHashTemplate.Instance,
             PayToPubkeyTemplate.Instance,

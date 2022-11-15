@@ -174,7 +174,7 @@ namespace Blockcore.Features.RPC
         private string authentication;
         private readonly Uri address;
         private readonly Network network;
-        private static readonly ConcurrentDictionary<Network, string> defaultPaths = new ConcurrentDictionary<Network, string>();
+        private static readonly ConcurrentDictionary<Network, string> defaultPaths = new();
         private ConcurrentQueue<(RPCRequest request, TaskCompletionSource<RPCResponse> task)> batchedRequests;
         private readonly RPCCredentialString credentialString;
 
@@ -350,7 +350,7 @@ namespace Blockcore.Features.RPC
                 capabilities.SupportGetNetworkInfo = true;
                 return;
             }
-            catch (RPCException ex) when (ex.RPCCode == RPCErrorCode.RPC_METHOD_NOT_FOUND || ex.RPCCode == RPCErrorCode.RPC_METHOD_DEPRECATED)
+            catch (RPCException ex) when (ex.RPCCode is RPCErrorCode.RPC_METHOD_NOT_FOUND or RPCErrorCode.RPC_METHOD_DEPRECATED)
             {
                 capabilities.SupportGetNetworkInfo = false;
             }
@@ -407,7 +407,7 @@ namespace Blockcore.Features.RPC
                 await command();
                 setResult(true);
             }
-            catch (RPCException ex) when (ex.RPCCode == RPCErrorCode.RPC_METHOD_NOT_FOUND || ex.RPCCode == RPCErrorCode.RPC_METHOD_DEPRECATED)
+            catch (RPCException ex) when (ex.RPCCode is RPCErrorCode.RPC_METHOD_NOT_FOUND or RPCErrorCode.RPC_METHOD_DEPRECATED)
             {
                 setResult(false);
             }
@@ -692,8 +692,7 @@ namespace Blockcore.Features.RPC
 
         private static bool IsUnauthorized(WebException ex)
         {
-            var httpResp = ex.Response as HttpWebResponse;
-            bool isUnauthorized = httpResp != null && httpResp.StatusCode == HttpStatusCode.Unauthorized;
+            bool isUnauthorized = ex.Response is HttpWebResponse httpResp && httpResp.StatusCode == HttpStatusCode.Unauthorized;
             return isUnauthorized;
         }
 
@@ -1152,8 +1151,7 @@ namespace Blockcore.Features.RPC
         public UnspentTransaction GetTxOut(uint256 txid, uint vout, bool includeMemPool = true)
         {
             RPCResponse response = SendCommand(RPCOperations.gettxout, txid.ToString(), vout, includeMemPool);
-            var responseObject = response.Result as JObject;
-            if (responseObject == null)
+            if (response.Result is not JObject responseObject)
                 return null;
 
             return new UnspentTransaction(response.Result as JObject);
@@ -1162,8 +1160,7 @@ namespace Blockcore.Features.RPC
         public async Task<UnspentTransaction> GetTxOutAsync(uint256 txid, uint vout, bool includeMemPool = true)
         {
             RPCResponse response = await SendCommandAsync(RPCOperations.gettxout, txid.ToString(), vout, includeMemPool).ConfigureAwait(false);
-            var responseObject = response.Result as JObject;
-            if (responseObject == null)
+            if (response.Result is not JObject responseObject)
                 return null;
 
             return new UnspentTransaction(responseObject);
@@ -1181,8 +1178,7 @@ namespace Blockcore.Features.RPC
 
             RPCResponse resp = SendCommand(RPCOperations.getblock, blockHash.ToString());
 
-            var tx = resp.Result["tx"] as JArray;
-            if (tx != null)
+            if (resp.Result["tx"] is JArray tx)
             {
                 foreach (JToken item in tx)
                 {

@@ -31,7 +31,7 @@ namespace Blockcore.Base.Deployments
         private readonly IConsensus consensus;
 
         // Cache of BIP9 deployment states keyed by block hash.
-        private readonly Dictionary<uint256, ThresholdState?[]> cache = new Dictionary<uint256, ThresholdState?[]>();
+        private readonly Dictionary<uint256, ThresholdState?[]> cache = new();
 
         /// <summary>
         /// Constructs this object containing the BIP9 deployment states cache.

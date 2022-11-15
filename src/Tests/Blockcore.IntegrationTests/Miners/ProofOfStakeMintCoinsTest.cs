@@ -17,8 +17,8 @@ namespace Blockcore.IntegrationTests.Miners
 {
     public sealed class ProofOfStakeMintCoinsTest
     {
-        private readonly HashSet<uint256> transactionsBeforeStaking = new HashSet<uint256>();
-        private readonly ConcurrentDictionary<uint256, TransactionOutputData> transactionLookup = new ConcurrentDictionary<uint256, TransactionOutputData>();
+        private readonly HashSet<uint256> transactionsBeforeStaking = new();
+        private readonly ConcurrentDictionary<uint256, TransactionOutputData> transactionLookup = new();
 
         [Fact]
         public void Staking_Wallet_Can_Mint_New_Coins()

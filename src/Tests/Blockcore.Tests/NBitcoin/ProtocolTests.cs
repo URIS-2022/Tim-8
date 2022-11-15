@@ -116,7 +116,7 @@ namespace NBitcoin.Tests
 
         public static string NATRuleName = "NBitcoin Tests";
 
-        private readonly List<IDisposable> _Disposables = new List<IDisposable>();
+        private readonly List<IDisposable> _Disposables = new();
 
         internal void AddDisposable(IDisposable disposable)
         {

@@ -10,7 +10,7 @@ namespace Blockcore.Utilities
     public class ReaderWriterLock
     {
         /// <summary>Internal lock object that the class wraps around.</summary>
-        private readonly ReaderWriterLockSlim rwLock = new ReaderWriterLockSlim();
+        private readonly ReaderWriterLockSlim rwLock = new();
 
         /// <summary>
         /// Enters the reader's lock.

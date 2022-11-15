@@ -93,7 +93,7 @@ namespace Blockcore.Features.MemoryPool.Fee
         public const double InfPriority = 1e9 * 21000000ul * Money.COIN;
 
         /// <summary>Maximum money value.</summary>
-        private static readonly Money MaxMoney = new Money(21000000 * Money.COIN);
+        private static readonly Money MaxMoney = new(21000000 * Money.COIN);
 
         /// <summary>Value for infinite fee rate.</summary>
         private static readonly double InfFeeRate = MaxMoney.Satoshi;

@@ -9,7 +9,7 @@ namespace Blockcore.P2P.Protocol.Payloads
     [Payload("getdata")]
     public class GetDataPayload : Payload
     {
-        private List<InventoryVector> inventory = new List<InventoryVector>();
+        private List<InventoryVector> inventory = new();
 
         public List<InventoryVector> Inventory { get { return this.inventory; } set { this.inventory = value; } }
 

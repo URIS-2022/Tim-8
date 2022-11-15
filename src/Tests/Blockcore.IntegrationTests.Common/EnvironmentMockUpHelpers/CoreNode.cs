@@ -42,10 +42,10 @@ namespace Blockcore.IntegrationTests.Common.EnvironmentMockUpHelpers
     public class CoreNode
     {
         private readonly NetworkCredential creds;
-        private readonly object lockObject = new object();
+        private readonly object lockObject = new();
         private readonly ILoggerFactory loggerFactory;
         internal readonly NodeRunner runner;
-        private List<Transaction> transactions = new List<Transaction>();
+        private List<Transaction> transactions = new();
 
         public int ApiPort => int.Parse(this.ConfigParameters["apiport"]);
 
@@ -57,7 +57,7 @@ namespace Blockcore.IntegrationTests.Common.EnvironmentMockUpHelpers
         /// <summary>Location of the data directory for the node.</summary>
         public string DataFolder => this.runner.DataFolder;
 
-        public IPEndPoint Endpoint => new IPEndPoint(IPAddress.Parse("127.0.0.1"), this.ProtocolPort);
+        public IPEndPoint Endpoint => new(IPAddress.Parse("127.0.0.1"), this.ProtocolPort);
 
         public string Config { get; }
 
@@ -328,7 +328,7 @@ namespace Blockcore.IntegrationTests.Common.EnvironmentMockUpHelpers
                 this.State = CoreNodeState.Starting;
             }
 
-            if ((this.runner is BitcoinCoreRunner) || (this.runner is StratisXRunner))
+            if (this.runner is BitcoinCoreRunner or StratisXRunner)
                 WaitForExternalNodeStartup();
             else
                 StartStratisRunner();

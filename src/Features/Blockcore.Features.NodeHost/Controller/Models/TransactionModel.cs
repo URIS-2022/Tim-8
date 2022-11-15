@@ -327,25 +327,15 @@ namespace Blockcore.Controllers.Models
         {
             if (template == null)
                 return "nonstandard";
-            switch (template.Type)
+            return template.Type switch
             {
-                case TxOutType.TX_PUBKEY:
-                    return "pubkey";
-
-                case TxOutType.TX_PUBKEYHASH:
-                    return "pubkeyhash";
-
-                case TxOutType.TX_SCRIPTHASH:
-                    return "scripthash";
-
-                case TxOutType.TX_MULTISIG:
-                    return "multisig";
-
-                case TxOutType.TX_NULL_DATA:
-                    return "nulldata";
-            }
-
-            return "nonstandard";
+                TxOutType.TX_PUBKEY => "pubkey",
+                TxOutType.TX_PUBKEYHASH => "pubkeyhash",
+                TxOutType.TX_SCRIPTHASH => "scripthash",
+                TxOutType.TX_MULTISIG => "multisig",
+                TxOutType.TX_NULL_DATA => "nulldata",
+                _ => "nonstandard",
+            };
         }
     }
 }

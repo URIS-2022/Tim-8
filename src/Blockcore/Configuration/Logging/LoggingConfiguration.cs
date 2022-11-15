@@ -76,7 +76,7 @@ namespace Blockcore.Configuration.Logging
         private static DataFolder folder;
 
         /// <summary>Mappings of keys to class name spaces to be used when filtering log categories.</summary>
-        private static readonly Dictionary<string, string> KeyCategories = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        private static readonly Dictionary<string, string> KeyCategories = new(StringComparer.OrdinalIgnoreCase)
         {
             // { "addrman", "" },
             // { "cmpctblock", "" }

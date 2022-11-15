@@ -10,7 +10,7 @@ namespace Blockcore.Networks.Strax.ScriptTemplates
 {
     public class PayToFederationTemplate : ScriptTemplate
     {
-        private static readonly PayToFederationTemplate _Instance = new PayToFederationTemplate();
+        private static readonly PayToFederationTemplate _Instance = new();
 
         public static PayToFederationTemplate Instance
         {

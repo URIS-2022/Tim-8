@@ -8,9 +8,9 @@ namespace Blockcore.Networks.City
 {
     internal class CitySetup
     {
-        internal static CitySetup Instance = new CitySetup();
+        internal static CitySetup Instance = new();
 
-        internal CoinSetup Setup = new CoinSetup
+        internal CoinSetup Setup = new()
         {
             FileNamePrefix = "city",
             ConfigFileName = "city.conf",
@@ -26,7 +26,7 @@ namespace Blockcore.Networks.City
             PoSVersion = 3
         };
 
-        internal NetworkSetup Main = new NetworkSetup
+        internal NetworkSetup Main = new()
         {
             Name = "CityMain",
             RootFolderName = "city",
@@ -61,7 +61,7 @@ namespace Blockcore.Networks.City
          }
         };
 
-        internal NetworkSetup RegTest = new NetworkSetup
+        internal NetworkSetup RegTest = new()
         {
             Name = "CityRegTest",
             RootFolderName = "cityregtest",
@@ -88,7 +88,7 @@ namespace Blockcore.Networks.City
             }
         };
 
-        internal NetworkSetup Test = new NetworkSetup
+        internal NetworkSetup Test = new()
         {
             Name = "CityTest",
             RootFolderName = "citytest",

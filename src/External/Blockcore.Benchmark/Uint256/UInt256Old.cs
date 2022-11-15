@@ -52,14 +52,14 @@ namespace Blockcore.Benchmark.Uint256.Old
             }
         }
 
-        private static readonly uint256 _Zero = new uint256();
+        private static readonly uint256 _Zero = new();
 
         public static uint256 Zero
         {
             get { return _Zero; }
         }
 
-        private static readonly uint256 _One = new uint256(1);
+        private static readonly uint256 _One = new(1);
 
         public static uint256 One
         {
@@ -156,7 +156,7 @@ namespace Blockcore.Benchmark.Uint256.Old
             return true;
         }
 
-        private static readonly HexEncoder Encoder = new HexEncoder();
+        private static readonly HexEncoder Encoder = new();
         private const int WIDTH_BYTE = 256 / 8;
         internal readonly UInt32 pn0;
         internal readonly UInt32 pn1;
@@ -171,44 +171,18 @@ namespace Blockcore.Benchmark.Uint256.Old
         {
             int uintIndex = index / sizeof(uint);
             int byteIndex = index % sizeof(uint);
-            UInt32 value;
-            switch (uintIndex)
+            var value = uintIndex switch
             {
-                case 0:
-                    value = this.pn0;
-                    break;
-
-                case 1:
-                    value = this.pn1;
-                    break;
-
-                case 2:
-                    value = this.pn2;
-                    break;
-
-                case 3:
-                    value = this.pn3;
-                    break;
-
-                case 4:
-                    value = this.pn4;
-                    break;
-
-                case 5:
-                    value = this.pn5;
-                    break;
-
-                case 6:
-                    value = this.pn6;
-                    break;
-
-                case 7:
-                    value = this.pn7;
-                    break;
-
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(index));
-            }
+                0 => this.pn0,
+                1 => this.pn1,
+                2 => this.pn2,
+                3 => this.pn3,
+                4 => this.pn4,
+                5 => this.pn5,
+                6 => this.pn6,
+                7 => this.pn7,
+                _ => throw new ArgumentOutOfRangeException(nameof(index)),
+            };
             return (byte)(value >> (byteIndex * 8));
         }
 
@@ -341,7 +315,7 @@ namespace Blockcore.Benchmark.Uint256.Old
         {
             if (ReferenceEquals(a, b))
                 return true;
-            if (((object)a == null) || ((object)b == null))
+            if ((a is null) || (b is null))
                 return false;
 
             bool equals = true;
@@ -380,9 +354,9 @@ namespace Blockcore.Benchmark.Uint256.Old
         {
             if (a is null && b is null)
                 return 0;
-            if (a is null && !(b is null))
+            if (a is null && b is not null)
                 return -1;
-            if (!(a is null) && b is null)
+            if (a is not null && b is null)
                 return 1;
             if (a.pn7 < b.pn7)
                 return -1;

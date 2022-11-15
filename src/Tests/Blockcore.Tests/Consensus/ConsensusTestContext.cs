@@ -50,12 +50,12 @@ namespace Blockcore.Tests.Consensus
         private readonly Mock<IInitialBlockDownloadState> ibd;
         public readonly Mock<IBlockPuller> BlockPuller;
         public readonly Mock<IBlockStore> BlockStore;
-        private readonly Mock<ICheckpoints> checkpoints = new Mock<ICheckpoints>();
+        private readonly Mock<ICheckpoints> checkpoints = new();
         public TestConsensusManager TestConsensusManager;
-        public Mock<IFinalizedBlockInfoRepository> FinalizedBlockMock = new Mock<IFinalizedBlockInfoRepository>();
-        public readonly Mock<IInitialBlockDownloadState> ibdState = new Mock<IInitialBlockDownloadState>();
+        public Mock<IFinalizedBlockInfoRepository> FinalizedBlockMock = new();
+        public readonly Mock<IInitialBlockDownloadState> ibdState = new();
         internal ChainedHeader InitialChainTip;
-        public Mock<IIntegrityValidator> IntegrityValidator = new Mock<IIntegrityValidator>();
+        public Mock<IIntegrityValidator> IntegrityValidator = new();
         public readonly Mock<IPartialValidator> PartialValidator;
         public readonly Mock<IFullValidator> FullValidator;
         public BlockPuller.OnBlockDownloadedCallback blockPullerBlockDownloadCallback;

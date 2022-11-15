@@ -7,7 +7,7 @@ namespace Blockcore.Features.Consensus
     {
         public static UnspentOutputsComparer Instance { get; } = new UnspentOutputsComparer();
 
-        private readonly OutPointComparer Comparer = new OutPointComparer();
+        private readonly OutPointComparer Comparer = new();
 
         public int Compare(UnspentOutput x, UnspentOutput y)
         {

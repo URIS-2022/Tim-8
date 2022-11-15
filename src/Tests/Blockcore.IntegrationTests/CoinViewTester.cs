@@ -11,7 +11,7 @@ namespace Blockcore.IntegrationTests
     public class CoinViewTester
     {
         private readonly ICoinView coinView;
-        private readonly List<UnspentOutput> pendingCoins = new List<UnspentOutput>();
+        private readonly List<UnspentOutput> pendingCoins = new();
         private HashHeightPair hash;
         private int blockHeight;
 

@@ -24,7 +24,7 @@ namespace Blockcore.EventBus
         /// <summary>
         /// The subscriptions lock to prevent race condition during publishing
         /// </summary>
-        private readonly object subscriptionsLock = new object();
+        private readonly object subscriptionsLock = new();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="InMemoryEventBus"/> class.

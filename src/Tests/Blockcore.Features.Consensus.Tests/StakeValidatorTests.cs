@@ -1332,8 +1332,8 @@ namespace Blockcore.Features.Consensus.Tests
 
         private class CKeyStore
         {
-            internal List<Tuple<Key, PubKey>> _Keys = new List<Tuple<Key, PubKey>>();
-            internal List<Script> _Scripts = new List<Script>();
+            internal List<Tuple<Key, PubKey>> _Keys = new();
+            internal List<Script> _Scripts = new();
 
             internal void AddKeyPubKey(Key key, PubKey pubkey)
             {

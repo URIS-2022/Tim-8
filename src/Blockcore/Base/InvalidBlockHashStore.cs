@@ -46,7 +46,7 @@ namespace Blockcore.Base
         private readonly IDateTimeProvider dateTimeProvider;
 
         /// <summary>Lock object to protect access to <see cref="invalidBlockHashesExpirations"/> and <see cref="orderedHashList"/>.</summary>
-        private readonly object lockObject = new object();
+        private readonly object lockObject = new();
 
         /// <summary>
         /// Collection of block header hashes that are to be considered invalid. If the value of the entry is not <c>null</c>,

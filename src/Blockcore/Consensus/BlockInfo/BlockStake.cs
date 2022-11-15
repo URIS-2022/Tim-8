@@ -459,7 +459,7 @@ namespace Blockcore.Consensus.BlockInfo
         /// <summary>
         /// A block signature - signed by one of the coin base txout[N]'s owner.
         /// </summary>
-        private BlockSignature blockSignature = new BlockSignature();
+        private BlockSignature blockSignature = new();
 
         [Obsolete("Should use Block.Load outside of ConsensusFactories")]
         public PosBlock(BlockHeader blockHeader) : base(blockHeader)
@@ -470,7 +470,7 @@ namespace Blockcore.Consensus.BlockInfo
         /// The block signature type.
         /// </summary>
         public BlockSignature BlockSignature { get; set; }
-        
+
 
         /// <summary>
         /// The additional serialization of the block POS block.

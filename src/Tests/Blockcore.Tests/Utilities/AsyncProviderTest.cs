@@ -17,7 +17,7 @@ namespace Blockcore.Tests.Utilities
     public class AsyncProviderTest
     {
         /// <summary>Source of randomness.</summary>
-        private readonly Random random = new Random();
+        private readonly Random random = new();
 
         private readonly AsyncProvider asyncProvider;
         private readonly Mock<ILogger> mockLogger;

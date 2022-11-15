@@ -888,8 +888,8 @@ namespace Blockcore.Consensus
         /// <exception cref="ConsensusException">Thrown in case CHT is not in a consistent state.</exception>
         private async Task<ConnectBlocksResult> ConnectBlockAsync(ChainedHeaderBlock blockToConnect)
         {
-            if ((blockToConnect.ChainedHeader.BlockValidationState != ValidationState.PartiallyValidated) &&
-                (blockToConnect.ChainedHeader.BlockValidationState != ValidationState.FullyValidated))
+            if (blockToConnect.ChainedHeader.BlockValidationState is not ValidationState.PartiallyValidated and
+                not ValidationState.FullyValidated)
             {
                 this.logger.LogError("Block '{0}' must be partially or fully validated but it is {1}.", blockToConnect, blockToConnect.ChainedHeader.BlockValidationState);
                 this.logger.LogTrace("(-)[BLOCK_INVALID_STATE]");

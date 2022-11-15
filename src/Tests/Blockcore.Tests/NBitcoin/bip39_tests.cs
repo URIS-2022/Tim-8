@@ -182,7 +182,7 @@ namespace NBitcoin.Tests
 
             foreach (char letter in ranges.SelectMany(c => c).OrderBy(c => c))
             {
-                string nonNormal = new String(new[] { letter });
+                string nonNormal = new(new[] { letter });
                 try
                 {
                     string normal = nonNormal.Normalize(NormalizationForm.FormKD);

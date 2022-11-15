@@ -8,9 +8,9 @@ namespace Blockcore.Networks.Cybits.Setup
 {
     internal class CybitsSetup
     {
-        internal static CybitsSetup Instance = new CybitsSetup();
+        internal static CybitsSetup Instance = new();
 
-        internal CoinSetup Setup = new CoinSetup
+        internal CoinSetup Setup = new()
         {
             FileNamePrefix = "cybits",
             ConfigFileName = "cybits.conf",
@@ -26,7 +26,7 @@ namespace Blockcore.Networks.Cybits.Setup
             PoSVersion = 4
         };
 
-        internal NetworkSetup Main = new NetworkSetup
+        internal NetworkSetup Main = new()
         {
             Name = "CybitsMain",
             RootFolderName = "cybits",
@@ -52,7 +52,7 @@ namespace Blockcore.Networks.Cybits.Setup
             }
         };
 
-        internal NetworkSetup RegTest = new NetworkSetup
+        internal NetworkSetup RegTest = new()
         {
             Name = "CybitsRegTest",
             RootFolderName = "cybitsregtest",
@@ -78,7 +78,7 @@ namespace Blockcore.Networks.Cybits.Setup
             }
         };
 
-        internal NetworkSetup Test = new NetworkSetup
+        internal NetworkSetup Test = new()
         {
             Name = "CybitsTest",
             RootFolderName = "cybitstest",

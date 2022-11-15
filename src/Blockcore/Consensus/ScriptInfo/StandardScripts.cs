@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
 using Blockcore.Consensus.TransactionInfo;
 using Blockcore.Networks;
@@ -10,7 +9,7 @@ namespace Blockcore.Consensus.ScriptInfo
 {
     public static class StandardScripts
     {
-        public static readonly List<ScriptTemplate> StandardTemplates = new List<ScriptTemplate>
+        public static readonly List<ScriptTemplate> StandardTemplates = new()
         {
             PayToPubkeyHashTemplate.Instance,
             PayToPubkeyTemplate.Instance,

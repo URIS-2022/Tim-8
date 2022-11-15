@@ -77,7 +77,7 @@ namespace Blockcore.Networks.X1.Components
         readonly BigInteger pow256 = BigInteger.ValueOf(2).Pow(256);
 
         /// <summary>Stopwatch for hash rate calculation.</summary>
-        readonly Stopwatch stopwatch = new Stopwatch();
+        readonly Stopwatch stopwatch = new();
 
         /// <summary>
         /// A cancellation token source that can cancel the mining processes and is linked to the <see cref="INodeLifetime.ApplicationStopping"/>.
@@ -509,7 +509,7 @@ namespace Blockcore.Networks.X1.Components
         private class MineBlockContext
         {
             private readonly ulong amountOfBlocksToMine;
-            public List<uint256> Blocks = new List<uint256>();
+            public List<uint256> Blocks = new();
             public BlockTemplate BlockTemplate { get; set; }
             public ulong ChainHeight { get; set; }
             public ChainedHeaderBlock ChainedHeaderBlock { get; internal set; }
@@ -593,7 +593,7 @@ namespace Blockcore.Networks.X1.Components
             }
             public override bool Equals(object obj)
             {
-                if (!(obj is CScriptNum))
+                if (obj is not CScriptNum)
                     return false;
                 var item = (CScriptNum)obj;
                 return this.m_value == item.m_value;

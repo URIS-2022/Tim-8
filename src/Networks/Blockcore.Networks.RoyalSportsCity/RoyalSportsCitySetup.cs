@@ -8,9 +8,9 @@ namespace Blockcore.Networks.RoyalSportsCity
 {
     internal class RoyalSportsCitySetup
     {
-        internal static RoyalSportsCitySetup Instance = new RoyalSportsCitySetup();
+        internal static RoyalSportsCitySetup Instance = new();
 
-        internal CoinSetup Setup = new CoinSetup
+        internal CoinSetup Setup = new()
         {
             FileNamePrefix = "royalsportscity",
             ConfigFileName = "royalsportscity.conf",
@@ -27,7 +27,7 @@ namespace Blockcore.Networks.RoyalSportsCity
             PoSVersion = 4
         };
 
-        internal NetworkSetup Main = new NetworkSetup
+        internal NetworkSetup Main = new()
         {
             Name = "RoyalSportsCityMain",
             RootFolderName = "royalsportscity",
@@ -53,7 +53,7 @@ namespace Blockcore.Networks.RoyalSportsCity
             }
         };
 
-        internal NetworkSetup RegTest = new NetworkSetup
+        internal NetworkSetup RegTest = new()
         {
             Name = "RoyalSportsCityRegTest",
             RootFolderName = "royalsportscityregtest",
@@ -79,7 +79,7 @@ namespace Blockcore.Networks.RoyalSportsCity
             }
         };
 
-        internal NetworkSetup Test = new NetworkSetup
+        internal NetworkSetup Test = new()
         {
             Name = "RoyalSportsCityTest",
             RootFolderName = "royalsportscitytest",

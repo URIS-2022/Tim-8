@@ -245,7 +245,7 @@ namespace Blockcore.Tests.Consensus
                 }
 
                 // Each should have 1 Next pointer.
-                Assert.True(nextPointersByHeightMap.Where(x => x.Key < 3 || (x.Key > 3 && x.Key < 7)).All(y => y.Value.Count == 1));
+                Assert.True(nextPointersByHeightMap.Where(x => x.Key is < 3 or > 3 and < 7).All(y => y.Value.Count == 1));
 
                 // Except for 8a and 8b which contain none.
                 Assert.True(nextPointersByHeightMap.Where(x => x.Key == 7).All(y => y.Value.Count == 0));

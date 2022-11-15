@@ -13,7 +13,7 @@ namespace Blockcore.Networks.XRC.Crypto
 
         private readonly object hashLock;
 
-        private static readonly Lazy<XRCHashX11> SingletonInstance = new Lazy<XRCHashX11>(LazyThreadSafetyMode.PublicationOnly);
+        private static readonly Lazy<XRCHashX11> SingletonInstance = new(LazyThreadSafetyMode.PublicationOnly);
 
         public XRCHashX11()
         {

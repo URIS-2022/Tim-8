@@ -14,7 +14,7 @@ namespace Blockcore.P2P.Protocol.Payloads
         /// <summary>
         /// <see cref="Headers"/>
         /// </summary>
-        private List<ProvenBlockHeader> headers = new List<ProvenBlockHeader>();
+        private List<ProvenBlockHeader> headers = new();
 
         /// <summary>
         /// Gets a list of up to 2,000 proven headers.
