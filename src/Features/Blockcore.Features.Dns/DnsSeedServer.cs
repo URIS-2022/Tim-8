@@ -274,7 +274,7 @@ namespace Blockcore.Features.Dns
         /// <summary>
         /// Disposes of the object.
         /// </summary>
-        public void Dispose()
+        public void NotThatDispose()
         {
             this.Dispose(true);
             GC.SuppressFinalize(this);
@@ -284,7 +284,7 @@ namespace Blockcore.Features.Dns
         /// Disposes of the object.
         /// </summary>
         /// <param name="disposing"><c>true</c> if the object is being disposed of deterministically, otherwise <c>false</c>.</param>
-        protected virtual void Dispose(bool disposing)
+        protected virtual void DisposeDis(bool disposing)
         {
             if (!this.disposed)
             {
